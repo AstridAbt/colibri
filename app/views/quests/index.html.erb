@@ -11,14 +11,16 @@
     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
       <div class="card-body">
         <% @level_1.each do |quest|  %>
-          <div class="card-product">
-            <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
-            <div class="card-product-infos">
-              <h2><%= quest.title %></h2>
-              <p><%= quest.points %></p>
-              <p><%= quest.content %></p>
+            <div class="card-product">
+              <%= link_to quest_path(quest) do %>
+                <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+              <% end %>
+                <div class="card-product-infos">
+                  <h2><%= quest.title %></h2>
+                  <p><%= quest.points %></p>
+                  <p><%= quest.content %></p>
+                </div>
             </div>
-          </div>
         <% end %>
       </div>
     </div>
