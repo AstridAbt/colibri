@@ -1,26 +1,79 @@
+// Level cards
+.accordion > .card {
+  align-items: center;
+  padding: 100px;
+}
+
+.accordion > .color-level-1 {
+  background-color: #05dfd7;
+}
+
+.accordion > .color-level-2 {
+  background-color: #512c96;
+}
+
+.accordion > .color-level-3 {
+  background-color: #1089ff;
+}
+
+.accordion > .card > .card-header {
+  background-color: #fffdf9;
+  text-align: center;
+  padding: 60px;
+  border-radius: 50px;
+  margin-bottom: -1px;
+  height: 200px;
+  width: 800px;
+}
+
+.title-quest-level {
+  font-size: 40px;
+  font-weight: bold;
+  color: #512b58;
+}
+
+.btn-link:focus, .btn-link.focus {
+  text-decoration: none;
+  box-shadow: none;
+}
+
+.btn-link:hover {
+  color: #035ac1;
+  text-decoration: none;
+}
+
+// Quest cards
 .card-product {
   overflow: hidden;
-  height: 120px;
+  height: 300px;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
+  margin-bottom: 40px;
 }
 
 .card-product img {
   height: 100%;
-  width: 120px;
+  width: 300px;
   object-fit: cover;
 }
 
-.card-product h2 {
-  font-size: 16px;
+.card-product h1 {
+  font-size: 40px;
   font-weight: bold;
   margin: 0;
 }
 
+.card-product h2 {
+  font-size: 30px;
+  font-weight: bold;
+  opacity: .7;
+  margin: 0;
+}
+
 .card-product p {
-  font-size: 12px;
+  font-size: 24px;
   line-height: 1.4;
   opacity: .7;
   margin-bottom: 0;
@@ -30,3 +83,4 @@
 .card-product .card-product-infos {
   padding: 16px;
 }
+
