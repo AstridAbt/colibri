@@ -1,5 +1,6 @@
 require "open-uri"
 
+Participation.destroy_all
 Quest.destroy_all
 User.destroy_all
 

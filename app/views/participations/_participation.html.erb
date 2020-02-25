@@ -1,8 +1,8 @@
 <% participations.each do |participation| %>
   <div class="card-product mt-2">
-   <!--  <#%= link_to quest_path(participation.quest) do %> -->
-<!--       <#%= cl_image_tag(participation.quest.photo.key, crop: :fill) %>
- -->  <!--   <#% end %> -->
+    <%= link_to quest_path(participation.quest) do %>
+      <%= cl_image_tag(participation.quest.photo.key, crop: :fill) %>
+  <% end %>
     <div class="card-product-infos d-flex">
       <div class="nom pr-3 flex-shrink-1">
         <h6>Nom :</h6>

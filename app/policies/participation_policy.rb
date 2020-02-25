@@ -5,6 +5,11 @@ class ParticipationPolicy < ApplicationPolicy
     end
   end
 
+  def index
+    true
+  end
+
   def destroy?
     record.user == user
+  end
 end
