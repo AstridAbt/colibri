@@ -4,5 +4,7 @@ Rails.application.routes.draw do
 
   resources :profiles, only: [:show]
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-  resources :quests, only: [:index, :show]
+  resources :quests do
+    resources :participations, only: [:create]
+  end
 end
