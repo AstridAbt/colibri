@@ -6,9 +6,9 @@ User.destroy_all
 
 puts 'Creating users...'
 
-user_1 = User.new(email: "astrid@gmail.com", password: "Astrid")
-user_2 = User.new(email: "thomas@gmail.com", password: "Thomas")
-user_3 = User.new(email: "jeremy@gmail.com", password: "Jeremy")
+user_1 = User.new(email: "astrid@gmail.com", password: "Astrid", username: "Astro DeLaVega")
+user_2 = User.new(email: "thomas@gmail.com", password: "Thomas", username: "StreichI2")
+user_3 = User.new(email: "jeremy@gmail.com", password: "Jeremy", username: "Strad")
 
 user_1.save!
 user_2.save!
