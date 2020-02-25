@@ -13,18 +13,18 @@
       <div class="card-body">
         <% @level_1.each do |quest|  %>
           <div class="card-product">
-            <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+            <%= link_to quest_path(quest) do %>
+              <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+            <% end %>
             <div class="card-product-infos">
               <h1><%= quest.title %></h1>
               <h2><%= quest.points %> points</h2>
               <p><%= quest.truncate_content %></p>
             </div>
-          </div>
         <% end %>
       </div>
     </div>
   </div>
-
   <div class="card color-level-2">
     <div class="card-header" id="headingTwo">
       <h2 class="mb-0">

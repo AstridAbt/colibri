@@ -1,0 +1,17 @@
+<div class="container bg-2">
+  <div class="title-reservation pt-2">
+    <h2> <strong>Toutes mes quêtes</strong> </h2>
+  </div>
+  <br>
+  <div class="container m-2">
+    <h5> <strong>Mes quêtes en cours:</strong> </h5>
+    <div id="resa-actual" class="resa-container">
+      <%= render "participations", participations: @current_participations %>
+    </div>
+    <br>
+    <h5> <strong>Mes quêtes passées:</strong> </h5>
+    <div id="resa-past" class="resa-container">
+      <%= render "participations", participations: @past_participations %>
+    </div>
+  </div>
+</div>
