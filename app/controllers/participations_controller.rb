@@ -37,4 +37,16 @@ class ParticipationsController < ApplicationController
     @participation.destroy
     redirect_to participations_path
   end
+
+  def finish_participation
+    @participation = Participation.find(params[:participation_id])
+    authorize @participation
+    @participation.end_date = Date.today
+    if @participation.save
+      @participation.increment_user_score
+      redirect_to participations_path
+    else
+      flash[:alert] = "Oups, something went wrong. Try again !"
+    end
+  end
 end

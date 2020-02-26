@@ -10,9 +10,10 @@
           <h6> Score: <%= participation.quest.points %> points</h6>
         <!-- </div> -->
       </div>
+
       <div class="card-product-actions d-flex align-items-center pr-4">
         <div class="btn-second m-4">
-          <%= link_to participations_path(participation) do %>
+          <%= link_to participation_finish_participation_path(participation), method: :patch do %>
             <button type="button" class="btn btn-success">J'ai réussi mon challenge !</button>
           <% end %>
         </div>
