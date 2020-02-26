@@ -13,6 +13,10 @@ class ParticipationPolicy < ApplicationPolicy
     true
   end
 
+  def edit?
+    true
+  end
+
   def destroy?
     record.user == user
   end
