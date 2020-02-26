@@ -9,9 +9,12 @@ class Participation < ApplicationRecord
   scope :pasted, lambda { where.not(end_date: nil)}
   scope :currents, lambda { where(end_date: nil)}
 
+  after_update :increment_user_score
+
+  private
   def increment_user_score
-    new_quest_point = quest.points
-    updated_score = user.score + new_quest_point
+    new_quest_point = self.quest.points.to_i
+    updated_score = self.user.score.to_i + new_quest_point
 
     user.update(score: updated_score)
   end
