@@ -1,8 +1,23 @@
+.card-product-wrapper {
+  display: inline-block;
+  width: 100%;
+  flex: 0 0 auto;
+  padding: 10px;
+}
+
+#resa-actual {
+  overflow-x: scroll;
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 30px;
+}
+
+
 .card-product {
   overflow: hidden;
   height: 120px;
   background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
   display: flex;
   align-items: center;
   position: relative;
@@ -40,8 +55,21 @@
 }
 
 .btn-second {
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-  padding: 7px 10px;
+  // position: absolute;
+  // right: 0px;
+  // bottom: 2px;
+  // padding: 7px 10px;
+}
+
+@media all and (max-width: 500px) {
+
+  .card-product {
+    flex-direction: column;
+    height: 100%;
+    width: 95%;
+    margin: auto;
+    img {
+      width: 100%;
+    }
+  }
 }
