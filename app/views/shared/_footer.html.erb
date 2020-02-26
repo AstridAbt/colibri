@@ -1,0 +1,20 @@
+<% if user_signed_in? %>
+<div class="footer footer-links">
+  <%= link_to profile_path(current_user) do %>
+  <div class="personnal"></div>
+    <%#= image_tag('personnal.svg', height: 50, width: 50, class: 'personnal') %>
+  <% end %>
+  <%= link_to quests_path do %>
+    <div class="quests"></div>
+    <%#= image_tag('quests.svg', height: 50, width: 50, class: 'quests') %>
+  <% end %>
+  <%= link_to '#' do %>
+    <div class="world"></div>
+    <%#= image_tag('world.svg', height: 50, width: 50, class: 'world') %>
+  <% end %>
+  <%= link_to '#' do %>
+    <div class="settings"></div>
+    <%#= image_tag('settings.svg', height: 50, width: 50, class: 'settings') %>
+  <% end %>
+</div>
+<% end %>

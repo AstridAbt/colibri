@@ -1,0 +1,61 @@
+#profiles-show .personnal {
+  background-image: url(image-path('personnal.svg'));
+  opacity: 1;
+}
+
+#quests-index .quests {
+  background-image: url(image-path('quests.svg'));
+  opacity: 1;
+}
+
+#world-show .world {
+  background-image: url(image-path('world.svg'));
+  opacity: 1;
+}
+
+#settings-show .settings {
+  background-image: url(image-path('settings.svg'));
+  opacity: 1;
+}
+
+.personnal, .quests, .world, .settings {
+  height: 50px;
+  width: 50px;
+  background-size: cover;
+  opacity: 0.3;
+}
+
+.personnal {
+  background-image: url(image-path('personnal-inactive.svg'));
+}
+
+.quests {
+  background-image: url(image-path('quests-inactive.svg'));
+}
+
+.world {
+  background-image: url(image-path('world-inactive.svg'));
+}
+
+.settings {
+  background-image: url(image-path('settings-inactive.svg'));
+}
+
+.footer {
+  background: #F4F4F4;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 80px;
+  color: rgba(0,0,0,0.3);
+}
+.footer-links {
+  display: flex;
+  align-items: center;
+}
+.footer-links a {
+  color: black;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0px 10px;
+}
