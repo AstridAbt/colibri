@@ -12,8 +12,23 @@
     </div>
     <div class="description_quest m-2">
       <p>
+        <i class="fas fa-tree"></i>
         <%= @quest.content %>
       </p>
     </div>
+    <div class="description_quest m-2">
+      <p>
+        <i class="fab fa-pagelines"></i>
+        <%= @quest.content_2 %>
+      </p>
+    </div>
+    <% if @quest.content_3 %>
+      <div class="description_quest m-2">
+        <p>
+          <i class="fas fa-leaf"></i>
+          <%= @quest.content_3 %>
+        </p>
+      </div>
+      <% end %>
   </div>
 </div>
