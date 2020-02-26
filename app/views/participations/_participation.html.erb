@@ -14,7 +14,7 @@
         <% end %>
       </div>
       <div class="btn-second btn-light m-4">
-        <%= link_to participations_path(participation) do %>
+        <%= link_to participation_finish_participation_path(participation), method: :patch do %>
           <button type="button" class="btn btn-success">J'ai réussi mon challenge !</button>
         <% end %>
       </div>

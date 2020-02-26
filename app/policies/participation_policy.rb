@@ -20,4 +20,8 @@ class ParticipationPolicy < ApplicationPolicy
   def destroy?
     record.user == user
   end
+
+  def finish_participation?
+    record.user == user
+  end
 end
