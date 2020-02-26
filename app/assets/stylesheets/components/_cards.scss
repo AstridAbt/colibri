@@ -1,7 +1,17 @@
-// Level cards
+// css of the 3 cards LEVEL: 1, 2 and 3
 .accordion > .card {
   align-items: center;
   padding: 10px;
+  border: 8px solid black;
+}
+
+.accordion > .card > .card-header {
+  background-color: #fffdf9;
+  text-align: center;
+  border-radius: 50px;
+  margin-bottom: -1px;
+  height: 70px;
+  width: 300px;
 }
 
 .accordion > .color-level-1 {
@@ -9,21 +19,11 @@
 }
 
 .accordion > .color-level-2 {
-  background-color: #512c96;
-}
-
-.accordion > .color-level-3 {
   background-color: #1089ff;
 }
 
-.accordion > .card > .card-header {
-  background-color: #fffdf9;
-  text-align: center;
-  // padding: 10px;
-  border-radius: 50px;
-  margin-bottom: -1px;
-  height: 70px;
-  width: 300px;
+.accordion > .color-level-3 {
+  background-color: #512c96;
 }
 
 .title-quest-level {
@@ -42,45 +42,52 @@
   text-decoration: none;
 }
 
-// Quest cards
-.card-product {
+// css of the cards QUEST
+.card-quest {
   overflow: hidden;
-  height: 200px;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
-.card-product img {
-  height: 100%;
-  width: 200px;
+.card-quest img {
+  height: 200px;
+  width: 100%;
   object-fit: cover;
 }
 
-.card-product h1 {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 0;
+.card-quest .card-quest-infos {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
 }
 
-.card-product h2 {
+.card-quest h2 {
   font-size: 16px;
   font-weight: bold;
+  margin: 0;
+}
+
+.card-quest p {
+  font-size: 12px;
   opacity: .7;
   margin: 0;
 }
 
-.card-product p {
+.card-quest-infos .card-quest-points {
+  background-color: #fffdf9;
+  padding-left: 8px;
+  border: 1px solid black;
+  border-radius: 10px;
+  position: absolute;
+  right: 16px;
+  top: -20px;
+  width: 40px;
+}
+
+.card-quest h3 {
   font-size: 12px;
-  line-height: 1.4;
-  opacity: .7;
-  margin-bottom: 0;
-  margin-top: 8px;
+  margin: 0;
 }
-
-.card-product .card-product-infos {
-  padding: 16px;
-}
-

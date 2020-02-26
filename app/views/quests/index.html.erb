@@ -1,26 +1,30 @@
 <div class="accordion" id="accordionExample">
+
   <div class="card color-level-1">
     <div class="card-header" id="headingOne">
       <h2 class="mb-0">
         <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
           <div class="title-quest-level">
-            Quests: Level 1
+            Level 1
           </div>
         </button>
       </h2>
     </div>
-    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
       <div class="card-body">
-        <% @level_1.each do |quest|  %>
-          <div class="card-product">
+        <% @level_1.each do |quest| %>
+          <div class="card-quest">
             <%= link_to quest_path(quest) do %>
               <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
             <% end %>
-            <div class="card-product-infos">
-              <h1><%= quest.title %></h1>
-              <h2><%= quest.points %> points</h2>
-              <p><%= quest.truncate_content %></p>
+            <div class="card-quest-infos">
+              <div>
+                <h2><%= quest.title %></h2>
+                <p><%= quest.truncate_content %></p>
+              </div>
+              <h3 class="card-quest-points"><%= quest.points %> pts</h3>
             </div>
+          </div>
         <% end %>
       </div>
     </div>
@@ -31,20 +35,24 @@
       <h2 class="mb-0">
         <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
           <div class="title-quest-level">
-            Quests: Level 2
+            Level 2
           </div>
         </button>
       </h2>
     </div>
     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
       <div class="card-body">
-        <% @level_2.each do |quest|  %>
-          <div class="card-product">
-            <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
-            <div class="card-product-infos">
-              <h1><%= quest.title %></h1>
-              <h2><%= quest.points %> points</h2>
-              <p><%= quest.truncate_content %></p>
+        <% @level_2.each do |quest| %>
+          <div class="card-quest">
+            <%= link_to quest_path(quest) do %>
+              <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+            <% end %>
+            <div class="card-quest-infos">
+              <div>
+                <h2><%= quest.title %></h2>
+                <p><%= quest.truncate_content %></p>
+              </div>
+              <h3 class="card-quest-points"><%= quest.points %> pts</h3>
             </div>
           </div>
         <% end %>
@@ -57,25 +65,28 @@
       <h2 class="mb-0">
         <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
           <div class="title-quest-level">
-            Quests: Level 3
+            Level 3
           </div>
         </button>
       </h2>
     </div>
     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
       <div class="card-body">
-        <% @level_3.each do |quest|  %>
-          <div class="card-product">
-            <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
-            <div class="card-product-infos">
-              <h1><%= quest.title %></h1>
-              <h2><%= quest.points %> points</h2>
-              <p><%= quest.truncate_content %></p>
+        <% @level_3.each do |quest| %>
+          <div class="card-quest">
+            <%= link_to quest_path(quest) do %>
+              <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+            <% end %>
+            <div class="card-quest-infos">
+              <div>
+                <h2><%= quest.title %></h2>
+                <p><%= quest.truncate_content %></p>
+              </div>
+              <h3 class="card-quest-points"><%= quest.points %> pts</h3>
             </div>
           </div>
         <% end %>
       </div>
     </div>
   </div>
-
 </div>
