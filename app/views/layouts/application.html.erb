@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Colibri</title>
     <meta name="viewport" content="width=320, initial-scale=1">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Slabo+27px&display=swap" rel="stylesheet">    <%= csrf_meta_tags %>
@@ -10,10 +11,12 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
   </head>
 
-  <body>
+  <body id="<%= controller.controller_name %>-<%= controller.action_name %>">
     <%= render 'shared/navbar' %>
+    <div class="content-wrapper">
+      <%= yield %>
+    </div>
+    <%= render 'shared/footer' %>
     <%= render 'shared/flashes' %>
-
-    <%= yield %>
   </body>
 </html>
