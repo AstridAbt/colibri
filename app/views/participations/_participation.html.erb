@@ -1,22 +1,26 @@
 <% participations.each do |participation| %>
-  <div class="card-product mt-2">
-    <%= link_to quest_path(participation.quest) do %>
-      <%= cl_image_tag(participation.quest.photo.key, crop: :fill) %>
-  <% end %>
-    <div class="card-product-infos d-flex">
-      <div class="nom pr-3 flex-shrink-1">
-        <h6> Quête : <%= participation.quest.title %></h6>
-        <h6> Score: <%= participation.quest.points %> points</h6>
+  <div class="card-product-wrapper">
+    <div class="card-product mt-2">
+      <%= link_to quest_path(participation.quest) do %>
+        <%= cl_image_tag(participation.quest.photo.key, crop: :fill) %>
+    <% end %>
+      <div class="card-product-infos d-flex flex-column flex-grow-1">
+        <!-- <div class="nom pr-3 flex-shrink-1"> -->
+          <h6> Quête : <%= participation.quest.title %></h6>
+          <h6> Score: <%= participation.quest.points %> points</h6>
+        <!-- </div> -->
       </div>
-      <div class="btn-second btn-light">
-        <%= link_to participation_path(participation), method: :delete, data: { confirm: "Êtes-vous certain de vouloir supprimer cette quête ?" } do %>
-          <i class="far fa-trash-alt"></i>
-        <% end %>
-      </div>
-      <div class="btn-second btn-light m-4">
-        <%= link_to participations_path(participation) do %>
-          <button type="button" class="btn btn-success">J'ai réussi mon challenge !</button>
-        <% end %>
+      <div class="card-product-actions d-flex align-items-center pr-4">
+        <div class="btn-second m-4">
+          <%= link_to participations_path(participation) do %>
+            <button type="button" class="btn btn-success">J'ai réussi mon challenge !</button>
+          <% end %>
+        </div>
+        <div class="btn-delete">
+          <%= link_to participation_path(participation), method: :delete, data: { confirm: "Êtes-vous certain de vouloir supprimer cette quête ?" } do %>
+            <i class="far fa-trash-alt"></i>
+          <% end %>
+        </div>
       </div>
     </div>
   </div>
