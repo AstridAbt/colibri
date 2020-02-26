@@ -19,6 +19,18 @@ class ParticipationsController < ApplicationController
     end
   end
 
+  def edit
+    @participation = Participation.find(params[:id])
+    authorize @participation
+  end
+
+  def update
+    @participation.user = current_user
+    authorize @participation
+    @participation.update
+    redirect_to edit_participations_path
+  end
+
   def destroy
     @participation = Participation.find(params[:id])
     authorize @participation
