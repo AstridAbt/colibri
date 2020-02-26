@@ -1,7 +1,7 @@
 // Level cards
 .accordion > .card {
   align-items: center;
-  padding: 100px;
+  padding: 10px;
 }
 
 .accordion > .color-level-1 {
@@ -19,15 +19,15 @@
 .accordion > .card > .card-header {
   background-color: #fffdf9;
   text-align: center;
-  padding: 60px;
+  // padding: 10px;
   border-radius: 50px;
   margin-bottom: -1px;
-  height: 200px;
-  width: 800px;
+  height: 70px;
+  width: 300px;
 }
 
 .title-quest-level {
-  font-size: 40px;
+  font-size: 24px;
   font-weight: bold;
   color: #512b58;
 }
@@ -45,35 +45,35 @@
 // Quest cards
 .card-product {
   overflow: hidden;
-  height: 300px;
+  height: 200px;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .card-product img {
   height: 100%;
-  width: 300px;
+  width: 200px;
   object-fit: cover;
 }
 
 .card-product h1 {
-  font-size: 40px;
+  font-size: 18px;
   font-weight: bold;
   margin: 0;
 }
 
 .card-product h2 {
-  font-size: 30px;
+  font-size: 16px;
   font-weight: bold;
   opacity: .7;
   margin: 0;
 }
 
 .card-product p {
-  font-size: 24px;
+  font-size: 12px;
   line-height: 1.4;
   opacity: .7;
   margin-bottom: 0;
