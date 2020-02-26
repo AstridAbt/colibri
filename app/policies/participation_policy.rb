@@ -1,11 +1,15 @@
 class ParticipationPolicy < ApplicationPolicy
   class Scope < Scope
     def resolve
-      scope.where(user: user)
+      scope.all
     end
   end
 
-  def index
+  def index?
+    true
+  end
+
+  def create?
     true
   end
 

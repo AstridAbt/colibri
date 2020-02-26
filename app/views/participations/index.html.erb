@@ -6,12 +6,12 @@
   <div class="container m-2">
     <h5> <strong>Mes quêtes en cours:</strong> </h5>
     <div id="resa-actual" class="resa-container">
-      <%= render "participations", participations: @current_participations %>
+      <%= render "participation", participations: @current_participations %>
     </div>
     <br>
     <h5> <strong>Mes quêtes passées:</strong> </h5>
     <div id="resa-past" class="resa-container">
-      <%= render "participations", participations: @past_participations %>
+      <%= render "participation", participations: @past_participations %>
     </div>
   </div>
 </div>

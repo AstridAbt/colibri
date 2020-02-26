@@ -5,19 +5,20 @@
   <% end %>
     <div class="card-product-infos d-flex">
       <div class="nom pr-3 flex-shrink-1">
-        <h6>Nom :</h6>
-        <h2> <%= participation.quest.title %></h2>
+        <h6>Quête : <%= participation.quest.title %></h6>
         <h2> <%= participation.quest.points %></h2>
       </div>
-      <div class="column pl-3 w-100">
-        <h6>Informations complémentaires: </h6>
-        <p><% "#{participation.content}" %></p>
-      </div>
       <div class="btn-second btn-light">
-        <%= link_to participation_path(participation), method: :delete, data: { confirm: "Vous êtes sur?" }, class: "comeback" do %>
+        <%= link_to participation_path(participation), method: :delete, data: { confirm: "Êtes-vous certain de vouloir supprimer cette quête ?" } do %>
           <i class="far fa-trash-alt"></i>
         <% end %>
       </div>
     </div>
   </div>
 <% end %>
+
+<div class="btn-second btn-light">
+  <%= link_to edit_quest_path(@quest), method: :delete, data: { confirm: "Êtes-vous certain de vouloir supprimer cette quête ?" } do %>
+    <i class="far fa-trash-alt"></i>
+  <% end %>
+</div>
