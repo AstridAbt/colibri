@@ -1,9 +1,13 @@
 class Participation < ApplicationRecord
+  # Relations
+  #
   belongs_to :user
   belongs_to :quest
 
-  scope :past, -> { where("? > ending_date", Date.today)}
-  scope :current, -> { where("? BETWEEN starting_date AND ending_date", Date.today)}
+  # Scopes
+  #
+  scope :pasted, lambda { where.not(end_date: nil)}
+  scope :currents, lambda { where(end_date: nil)}
 
   def increment_user_score
     new_quest_point = quest.points
