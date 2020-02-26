@@ -1,8 +1,8 @@
 <div class="container my-3">
   <div class="row justify-content-center align-items-center">
     <div class="profile-user-infos col-8">
-      <h2 id="welcome-message-user">Salut <%= @profile.username %>,</h2>
-      <p>Ton score actuel est de <%= @profile.score %> X </p>
+      <h2>Salut <%= @profile.username %>,</h2>
+      <p>Ton score actuel est de <%= @profile.calcul_user_score %></p>
       <p> Tu as <%= @profile.participations.count %> quêtes en cours !</h2>
     </div>
   </div>
