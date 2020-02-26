@@ -7,5 +7,5 @@ Rails.application.routes.draw do
   resources :quests do
     resources :participations, only: [:create]
   end
-  resources :participations, only: [:index, :destroy]
+  resources :participations, only: [:index, :destroy, :edit]
 end
