@@ -12,7 +12,6 @@
   padding-bottom: 30px;
 }
 
-
 .card-product {
   overflow: hidden;
   height: 120px;
@@ -52,6 +51,11 @@
   border-left: 1px double grey;
   position: absolute;
   left: 500px;
+}
+
+.btn-delete {
+  font-size: 12px;
+  color: grey;
 }
 
 .btn-second {
