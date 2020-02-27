@@ -13,7 +13,7 @@ class ParticipationsController < ApplicationController
     @participation.user = current_user
     authorize @participation
     if @participation.save
-      redirect_to participations_path
+      redirect_to profile_path(current_user)
     else
       render :new
     end
