@@ -7,6 +7,7 @@ class User < ApplicationRecord
 
   has_one :carbone_print
   has_many :participations, dependent: :destroy
+  has_many :quests, through: :participations
 
   validates_presence_of :username
   validates_uniqueness_of :username

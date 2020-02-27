@@ -8,8 +8,10 @@
         <h1>
           <%= @quest.title %>
         </h1>
+        <br>
       </div>
     </div>
+    <h4><em>Pourquoi réaliser cette quête ?</em> </h4>
     <div class="description_quest m-2">
       <p>
         <i class="fas fa-tree"></i>
@@ -31,9 +33,9 @@
       </div>
       <% end %>
   </div>
-  <div class="participation_button">
+  <div class="mx-auto" style="width: 200px;">
     <%= simple_form_for([@quest, @participation]) do |f| %>
-      <%= f.submit "Accepter ce challenge !" %>
+      <%= f.submit "Accepter ce challenge !", class: 'btn-success mb-2' %>
       <% end %>
   </div>
 </div>

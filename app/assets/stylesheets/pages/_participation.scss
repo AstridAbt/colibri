@@ -12,6 +12,12 @@
   padding-bottom: 30px;
 }
 
+#resa-past {
+  overflow-x: scroll;
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 30px;
+}
 
 .card-product {
   overflow: hidden;
