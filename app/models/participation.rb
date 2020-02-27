@@ -3,6 +3,7 @@ class Participation < ApplicationRecord
   #
   belongs_to :user
   belongs_to :quest
+  has_many :reviews, dependent: :destroy
   after_create :set_carbone_print
 
   # Scopes

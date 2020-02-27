@@ -8,6 +8,8 @@ class User < ApplicationRecord
   has_one :carbone_print, dependent: :destroy
   has_many :participations, dependent: :destroy
   has_many :quests, through: :participations, dependent: :destroy
+  has_many :reviews, through: :participations, dependent: :destroy
+
 
   validates_presence_of :username
   validates_uniqueness_of :username
