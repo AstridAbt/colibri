@@ -18,24 +18,24 @@ puts 'Finished users creation !'
 
 puts 'Creating quests...'
 
-file_1_1 = URI.open('https://images.unsplash.com/photo-1525680996651-0222228be6f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80')
-file_1_2 = URI.open('https://images.unsplash.com/photo-1525680996651-0222228be6f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80')
-file_1_3 = URI.open('https://images.unsplash.com/photo-1525680996651-0222228be6f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80')
-file_1_4 = URI.open('https://images.unsplash.com/photo-1525680996651-0222228be6f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80')
-file_1_5 = URI.open('https://images.unsplash.com/photo-1525680996651-0222228be6f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80')
-file_1_6 = URI.open('https://images.unsplash.com/photo-1525680996651-0222228be6f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80')
-file_2_1 = URI.open('https://images.unsplash.com/photo-1525680996651-0222228be6f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80')
-file_2_2 = URI.open('https://images.unsplash.com/photo-1525680996651-0222228be6f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80')
-file_2_3 = URI.open('https://images.unsplash.com/photo-1525680996651-0222228be6f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80')
-file_2_4 = URI.open('https://images.unsplash.com/photo-1525680996651-0222228be6f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80')
-file_2_5 = URI.open('https://images.unsplash.com/photo-1525680996651-0222228be6f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80')
-file_2_6 = URI.open('https://images.unsplash.com/photo-1525680996651-0222228be6f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80')
-file_3_1 = URI.open('https://images.unsplash.com/photo-1525680996651-0222228be6f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80')
-file_3_2 = URI.open('https://images.unsplash.com/photo-1525680996651-0222228be6f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80')
-file_3_3 = URI.open('https://images.unsplash.com/photo-1525680996651-0222228be6f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80')
-file_3_4 = URI.open('https://images.unsplash.com/photo-1525680996651-0222228be6f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80')
-file_3_5 = URI.open('https://images.unsplash.com/photo-1525680996651-0222228be6f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80')
-file_3_6 = URI.open('https://images.unsplash.com/photo-1525680996651-0222228be6f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80')
+file_1_1 = URI.open('https://res.cloudinary.com/ddaiy1lcj/image/upload/v1582800585/2-j_%C3%A9teins_la_lumi%C3%A8re_dke3ku.jpg')
+file_1_2 = URI.open('https://res.cloudinary.com/ddaiy1lcj/image/upload/v1582795670/1_J_utilise_un_shampoing_solide_bio_qnxlpb.jpg')
+file_1_3 = URI.open('https://res.cloudinary.com/ddaiy1lcj/image/upload/v1582795670/1_Je_fais_pipi_sous_la_douche_rvyvuh.jpg')
+file_1_4 = URI.open('https://res.cloudinary.com/ddaiy1lcj/image/upload/v1582795670/1_Je_priviligie_les_escaliers_qbwq8v.jpg')
+file_1_5 = URI.open('https://res.cloudinary.com/ddaiy1lcj/image/upload/v1582795670/1_J_utilise_un_moteur_de_recherche_%C3%A9co-responsable_temmat.jpg')
+file_1_6 = URI.open('https://res.cloudinary.com/ddaiy1lcj/image/upload/v1582795669/1_J_utilise_une_boule_%C3%A0_th%C3%A9_brwmq1.jpg')
+file_2_1 = URI.open('https://res.cloudinary.com/ddaiy1lcj/image/upload/v1582795670/2_J_ach%C3%A8te_mes_fruits_et_l%C3%A9gumes_circuit_court_xlyrdv.jpg')
+file_2_2 = URI.open('https://res.cloudinary.com/ddaiy1lcj/image/upload/v1582795670/2_Je_r%C3%A9duis_ma_garde_robe_hbmfjp.jpg')
+file_2_3 = URI.open('https://res.cloudinary.com/ddaiy1lcj/image/upload/v1582795670/2_Je_fabrique_une_%C3%A9ponge_z%C3%A9ro_d%C3%A9chet_a0zqy7.jpg')
+file_2_4 = URI.open('https://res.cloudinary.com/ddaiy1lcj/image/upload/v1582795670/2_Je_fais_des_cadeaux_r%C3%A9utilis%C3%A9s_zlcl6u.jpg')
+file_2_5 = URI.open('https://res.cloudinary.com/ddaiy1lcj/image/upload/v1582795671/2_Je_privil%C3%A9gie_le_v%C3%A9lo_nlrlvs.jpg')
+file_2_6 = URI.open('https://res.cloudinary.com/ddaiy1lcj/image/upload/v1582795670/2_J_arr%C3%AAte_de_manger_au_fast-food_bgbbr3.jpg')
+file_3_1 = URI.open('https://res.cloudinary.com/ddaiy1lcj/image/upload/v1582795671/3_Je_fais_mes_courses_en_vrac_evjy3y.jpg')
+file_3_2 = URI.open('https://res.cloudinary.com/ddaiy1lcj/image/upload/v1582795671/3_Je_m_habille_dans_les_friperies_ck426p.jpg')
+file_3_3 = URI.open('https://res.cloudinary.com/ddaiy1lcj/image/upload/v1582795670/3_J_ach%C3%A8te_mes_produits_high-tech_reconditionn%C3%A9s_oanpjs.jpg')
+file_3_4 = URI.open('https://res.cloudinary.com/ddaiy1lcj/image/upload/v1582795671/3_Je_pr%C3%A9f%C3%A8re_le_train_%C3%A0_l_avion_i2yrgc.jpg')
+file_3_5 = URI.open('https://res.cloudinary.com/ddaiy1lcj/image/upload/v1582795671/3_Je_participe_%C3%A0_nettoyer_les_espaces_sauvages_fodbes.jpg')
+file_3_6 = URI.open('https://res.cloudinary.com/ddaiy1lcj/image/upload/v1582795670/3_Je_fais_mon_propre_dentifrice_hommuo.jpg')
 
 quest_1_1 = Quest.create!(
   points: 100,
@@ -105,7 +105,7 @@ quest_1_6 = Quest.create!(
     content_2: "
        Acheter du thé en vrac permet de réduire ses déchets"
 )
-quest_1_5.photo.attach(io: file_1_6, filename: 'nes.png', content_type: 'image/png')
+quest_1_6.photo.attach(io: file_1_6, filename: 'nes.png', content_type: 'image/png')
 
 quest_2_1 = Quest.create!(
   points: 200,
@@ -157,13 +157,13 @@ quest_2_4.photo.attach(io: file_2_4, filename: 'nes.png', content_type: 'image/p
 
 quest_2_5 = Quest.create!(
   points: 200,
-  title: 'Je participe à nettoyer les espaces publics',
+  title: 'Je privilégie le vélo pour mes déplacements courts',
   content:"
-     Tout le plastique produit dans le monde existe encore",
+     Je décide de rompre avec mes habitudes",
   content_2: "
-     L’enjeu du traitement des déchets sauvages est important pour la protection de l’environnement",
+     J’opte pour une solution de mobilité douce pour les petites distances",
   content_3: "
-     Chacun peut contribuer à nettoyer les espaces sauvages"
+     Je retrouve le sens des distances et le goût de la vie à l’air libre"
 )
 quest_2_5.photo.attach(io: file_2_5, filename: 'nes.png', content_type: 'image/png')
 

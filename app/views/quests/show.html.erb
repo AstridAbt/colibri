@@ -1,7 +1,7 @@
 <div class="container-fluid">
   <div class="row">
     <div class="titre_1 w-100">
-      <div class="quest-image" style="background: url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg)">
+      <div class="quest-image" style="background: url('<%= cl_image_path @quest.photo.key , alt: "alttext" %>')">
         <p class="score m-0"><span><%= @quest.points %></span> pts</p>
       </div>
       <div class="title_quest m-2">
