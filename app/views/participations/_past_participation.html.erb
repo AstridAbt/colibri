@@ -1,0 +1,13 @@
+<% participations.each do |participation| %>
+  <div class="card-product-wrapper">
+    <div class="card-product mt-2">
+      <%= link_to quest_path(participation.quest) do %>
+        <%= cl_image_tag(participation.quest.photo.key, crop: :fill) %>
+      <% end %>
+      <div class="card-product-infos d-flex flex-column flex-grow-1">
+        <h6> Quête : <%= participation.quest.title %></h6>
+        <h6> Score: <%= participation.quest.points %> points</h6>
+      </div>
+    </div>
+  </div>
+<% end %>
