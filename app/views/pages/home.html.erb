@@ -1,2 +1,5 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div>
+  <%= image_tag "logo.svg", alt: "alttext" %>
+  <h1>Colibri</h1>
+  <%= link_to 'Start', profile_path(current_user), class: "btn btn-primary" %>
+</div>
