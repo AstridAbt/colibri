@@ -8,6 +8,11 @@
   opacity: 1;
 }
 
+#quests-show .quests {
+  background-image: url(image-path('quests.svg'));
+  opacity: 1;
+}
+
 #world-show .world {
   background-image: url(image-path('world.svg'));
   opacity: 1;

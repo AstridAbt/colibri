@@ -12,6 +12,7 @@
   padding-bottom: 30px;
 }
 
+<<<<<<< HEAD
 #resa-past {
   overflow-x: scroll;
   display: flex;
@@ -19,6 +20,8 @@
   padding-bottom: 30px;
 }
 
+=======
+>>>>>>> master
 .card-product {
   overflow: hidden;
   height: 120px;
@@ -58,6 +61,12 @@
   border-left: 1px double grey;
   position: absolute;
   left: 500px;
+}
+
+.btn-delete {
+  font-size: 12px;
+  color: grey;
+  text-decoration: underline;
 }
 
 .btn-second {
