@@ -38,4 +38,14 @@
       <%= f.submit "Accepter ce challenge !", class: 'btn-success mb-2' %>
     <% end %>
   </div>
+
+    <div class="list-group">
+      <h3>Regardez les reviews de cette quête :</h3>
+      <% @quest.reviews.each do |review| %>
+      <div class="list-group-item">
+        <h5>Posté par : <%= review.user.username %></h5>
+        <p>Review : <%= review.content %></p>
+      </div>
+      <% end %>
+    </div>
 </div>
