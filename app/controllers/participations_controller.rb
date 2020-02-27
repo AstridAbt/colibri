@@ -35,7 +35,7 @@ class ParticipationsController < ApplicationController
     @participation = Participation.find(params[:id])
     authorize @participation
     @participation.destroy
-    redirect_to participations_path
+    redirect_to profile_path(current_user)
   end
 
   def finish_participation
@@ -44,7 +44,7 @@ class ParticipationsController < ApplicationController
     @participation.end_date = Date.today
     if @participation.save
       @participation.finish_quest
-      redirect_to participations_path
+      redirect_to profile_path(current_user)
     else
       flash[:alert] = "Oups, something went wrong. Try again !"
     end
