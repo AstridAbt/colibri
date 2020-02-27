@@ -12,11 +12,21 @@
   </head>
 
   <body id="<%= controller.controller_name %>-<%= controller.action_name %>">
-    <%= render 'shared/navbar' %>
-    <div class="content-wrapper">
-      <%= yield %>
-    </div>
-    <%= render 'shared/footer' %>
+    <% if pages_home? == false %>
+      <%= render 'shared/navbar' %>
+    <% end %>
+
+    <% if pages_home? %>
+      <div class="content-wrapper-home">
+    <% else %>
+      <div class="content-wrapper">
+    <% end %>
+        <%= yield %>
+      </div>
+
+    <% if pages_home? == false %>
+      <%= render 'shared/footer' %>
+    <% end %>
     <%= render 'shared/flashes' %>
   </body>
 </html>

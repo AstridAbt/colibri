@@ -1,5 +1,11 @@
-<div>
-  <%= image_tag "logo.svg", alt: "alttext" %>
-  <h1>Colibri</h1>
-  <%= link_to 'Start', profile_path(current_user), class: "btn btn-primary" %>
+<div class="pt-5">
+  <div class="justify-content-center colibri pt-5">
+    <%= image_tag "logo.svg", alt: "alttext" %>
+  </div>
+  <div class="d-flex justify-content-center align-items-center my-3">
+    <h1>Colibri</h1>
+  </div>
+  <div class="d-flex justify-content-center align-items-center pt-5">
+    <%= link_to 'Start', profile_path(current_user), class: "btn-home" %>
+  </div>
 </div>

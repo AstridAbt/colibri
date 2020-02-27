@@ -5,11 +5,51 @@
   padding-top: 20px;
 }
 
+.content-wrapper-home{
+  background: white;
+  height: 100vh;
+}
 
 .colibri {
-  background-image: url();
+  padding-left: -20px;
+}
+
+.btn-home{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: $corail;
+  border-radius: 25px;
+  font-weight: bold;
+  // display: inline-block;
+  position: relative;
+  width: 150px;
+  height: 50px;
+  &::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    top: 0;
+    left: 0;
+    // background-color: $corail;
+  }
+  &::before {
+    animation: sonar-effect 1s ease-in-out .1s infinite;
+  }
+}
+
+@keyframes sonar-effect {
+  100% {
+    box-shadow: 0 0 0 5px $corail, 0 0 10px 10px $corail, 0 0 0 10px $corail;
+    opacity: 0;
+  }
 }
 
 h1 {
-  font-family: "Sansation Light"
+  font-family: "Sansation Light";
+  font-size: 50px;
 }
