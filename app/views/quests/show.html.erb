@@ -35,7 +35,13 @@
   </div>
   <div class="mx-auto" style="width: 200px;">
     <%= simple_form_for([@quest, @participation]) do |f| %>
-      <%= f.submit "Accepter ce challenge !", class: 'btn-success mb-2' %>
+      <%= f.submit "Accepter cette quête !", class: 'btn-success mb-2' %>
+    <% end %>
+  </div>
+  <div class="mx-auto" style="width: 200px;">
+    <%= simple_form_for([@quest, @participation]) do |f| %>
+      <i class="fas fa-angle-left"></i>
+      <%= link_to 'Revenir aux quêtes', quests_path(quest_level: @quest.points), class: 'comeback' %>
     <% end %>
   </div>
 
