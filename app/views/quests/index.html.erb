@@ -15,7 +15,7 @@
         <% @level_1.each do |quest| %>
           <div class="card-quest">
             <%= link_to quest_path(quest) do %>
-              <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+              <%= cl_image_tag quest.photo.key, alt: "alttext" %>
             <% end %>
             <div class="card-quest-infos">
               <div>
@@ -45,7 +45,7 @@
         <% @level_2.each do |quest| %>
           <div class="card-quest">
             <%= link_to quest_path(quest) do %>
-              <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+              <%= cl_image_tag quest.photo.key, alt: "alttext" %>
             <% end %>
             <div class="card-quest-infos">
               <div>
@@ -75,7 +75,7 @@
         <% @level_3.each do |quest| %>
           <div class="card-quest">
             <%= link_to quest_path(quest) do %>
-              <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+              <%= cl_image_tag quest.photo.key, alt: "alttext" %>
             <% end %>
             <div class="card-quest-infos">
               <div>
