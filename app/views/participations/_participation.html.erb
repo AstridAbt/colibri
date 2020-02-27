@@ -5,10 +5,8 @@
         <%= cl_image_tag(participation.quest.photo.key, crop: :fill) %>
     <% end %>
       <div class="card-product-infos d-flex flex-column flex-grow-1">
-        <!-- <div class="nom pr-3 flex-shrink-1"> -->
           <h6> Quête : <%= participation.quest.title %></h6>
           <h6> Score: <%= participation.quest.points %> points</h6>
-        <!-- </div> -->
       </div>
 
       <div class="card-product-actions pr-4">

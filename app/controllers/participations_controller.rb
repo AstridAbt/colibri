@@ -43,7 +43,7 @@ class ParticipationsController < ApplicationController
     authorize @participation
     @participation.end_date = Date.today
     if @participation.save
-      @participation.increment_user_score
+      @participation.finish_quest
       redirect_to participations_path
     else
       flash[:alert] = "Oups, something went wrong. Try again !"
