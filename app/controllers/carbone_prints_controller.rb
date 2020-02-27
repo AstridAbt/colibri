@@ -1,3 +1,2 @@
 class CarbonePrintsController < ApplicationController
-
 end
