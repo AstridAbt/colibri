@@ -1,10 +1,12 @@
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter">
-  Ajouter un review!
-</button>
+<div class="mx-4 mb-4">
+  <button type="button" class="btn btn-success" data-toggle="modal" data-target="#reviewModal_<%= participation.id %>">
+    Ajouter un review!
+  </button>
+</div>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal fade" id="reviewModal_<%= participation.id %>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -14,11 +16,16 @@
         </button>
       </div>
       <div class="modal-body">
-        <%= simple_form_for [ participation, Review.new ] do |f| %>
-          <%= f.input :content %>
-          <%= f.submit "Ajouter ma review", class: "btn btn-success" %>
-        <% end %>
+          <%= simple_form_for [ participation, Review.new ], html: { class: "review_rating" } do |f| %>
+            <%= f.input :rating, collection: (1..5).to_a, label: "Mettez une note" %>
+            <%= f.input :content %>
+            <%= f.submit "Ajouter ma review", class: "btn btn-success" %>
+          <% end %>
       </div>
     </div>
   </div>
 </div>
+
+
+
+

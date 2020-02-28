@@ -50,6 +50,14 @@
       <% @quest.reviews.each do |review| %>
       <div class="list-group-item">
         <h5>Posté par : <%= review.user.username %></h5>
+        <div>
+          <% if review.rating %>
+          <h5>Rating : <%= review.rating %></h5>
+            <%# review.rating.times do |i| %>
+<!--               <a href="#" data-rating-value=<%#=i%> data-rating-text=<%#= i %> class="br-selected br-current"></a> -->
+            <%# end %>
+          <% end %>
+        </div>
         <p>Review : <%= review.content %></p>
       </div>
       <% end %>
