@@ -6,4 +6,13 @@ module ApplicationHelper
   def pages_quests_index?
     params[:controller] == 'quests' && params[:action] == 'index'
   end
+
+  def pages_quests_show?
+    params[:controller] == 'quests' && params[:action] == 'show'
+  end
+
+  def pages_profile_show?
+    params[:controller] == 'profiles' && params[:action] == 'show'
+  end
+
 end
