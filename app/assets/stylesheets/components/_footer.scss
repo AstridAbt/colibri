@@ -1,20 +1,20 @@
 #profiles-show .personnal {
-  background-image: url(image-path('personnal.svg'));
+  background-image: url(image-path('personnal1.svg'));
   opacity: 1;
 }
 
 #quests-index .quests {
-  background-image: url(image-path('quests.svg'));
+  background-image: url(image-path('quests1.svg'));
   opacity: 1;
 }
 
 #quests-show .quests {
-  background-image: url(image-path('quests.svg'));
+  background-image: url(image-path('quests1.svg'));
   opacity: 1;
 }
 
 #world-show .world {
-  background-image: url(image-path('world.svg'));
+  background-image: url(image-path('world1.svg'));
   opacity: 1;
 }
 
@@ -27,19 +27,19 @@
   height: 50px;
   width: 50px;
   background-size: cover;
-  opacity: 0.3;
+  opacity: 0.6;
 }
 
 .personnal {
-  background-image: url(image-path('personnal-inactive.svg'));
+  background-image: url(image-path('personnal-inactive1.svg'));
 }
 
 .quests {
-  background-image: url(image-path('quests-inactive.svg'));
+  background-image: url(image-path('quests-inactive1.svg'));
 }
 
 .world {
-  background-image: url(image-path('world-inactive.svg'));
+  background-image: url(image-path('world-inactive1.svg'));
 }
 
 .settings {
@@ -47,12 +47,14 @@
 }
 
 .footer {
-  background: white;
+  // background: #00897B;
+  background: #55ae77;
   display: flex;
   align-items: center;
   justify-content: space-around;
   height: 80px;
   color: rgba(0,0,0,0.3);
+  border-top: 4px solid black;
 }
 .footer-links {
   display: flex;

@@ -13,11 +13,32 @@
   </head>
 
   <body id="<%= controller.controller_name %>-<%= controller.action_name %>">
-    <%= render 'shared/navbar' %>
-    <div class="content-wrapper">
-      <%= yield %>
-    </div>
-    <%= render 'shared/footer' %>
+
+    <%# if user_signed_in? %>
+      <%#= redirect_to root_path %>
+    <%# else %>
+      <%#= render 'devise/sessions/new' %>
+    <%# end %>
+
+    <% if pages_home? == false %>
+      <%= render 'shared/navbar' %>
+    <% end %>
+
+
+
+    <% if pages_home? %>
+      <div class="content-wrapper-home">
+    <% elsif pages_quests_index? %>
+      <div class="content-wrapper-quests-index">
+    <% else %>
+      <div class="content-wrapper">
+    <% end %>
+        <%= yield %>
+      </div>
+
+    <% if pages_home? == false %>
+      <%= render 'shared/footer' %>
+    <% end %>
     <%= render 'shared/flashes' %>
   </body>
 </html>
