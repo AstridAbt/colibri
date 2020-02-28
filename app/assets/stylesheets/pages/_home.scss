@@ -21,6 +21,30 @@
   overflow: scroll;
 }
 
+.content-wrapper-quests-show{
+  height: calc(100vh - 70px - 80px);
+  position: relative;
+  background: white;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: scroll;
+}
+
+.content-wrapper-profile-show{
+  height: calc(100vh - 70px - 80px);
+  position: relative;
+  background: white;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: scroll;
+}
+
+
+
 .colibri {
   padding-left: -20px;
 }

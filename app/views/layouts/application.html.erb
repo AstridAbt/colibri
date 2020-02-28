@@ -30,6 +30,10 @@
       <div class="content-wrapper-home">
     <% elsif pages_quests_index? %>
       <div class="content-wrapper-quests-index">
+    <% elsif pages_quests_show?%>
+      <div class="content-wrapper-quests-show">
+    <% elsif pages_profile_show? %>
+      <div class="content-wrapper-profile-show">
     <% else %>
       <div class="content-wrapper">
     <% end %>

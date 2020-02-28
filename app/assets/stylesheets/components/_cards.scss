@@ -82,14 +82,23 @@
 }
 
 .card-quest-infos .card-quest-points {
-  background-color: #fffdf9;
-  padding-left: 8px;
-  border: 1px solid black;
-  border-radius: 10px;
+  background: #ffffffc9;
+  padding: 8px 16px;
+  border-radius: 25px;
   position: absolute;
-  right: 16px;
-  top: -20px;
-  width: 40px;
+  right: 10px;
+  top: -40px;
+span {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+
+  // background-color: #fffdf9;
+  // padding-left: 8px;
+  // border: 1px solid black;
+  // border-radius: 10px;
+  // width: 40px;
 }
 
 .card-quest h3 {
