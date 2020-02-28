@@ -22,3 +22,8 @@ require("channels")
 // WRITE YOUR OWN JS STARTING FROM HERE 👇
 // ----------------------------------------------------
 import "bootstrap";
+import {initCollapse} from '../components/initCollapse';
+
+document.addEventListener('turbolinks:load', () => {
+  initCollapse();
+})
