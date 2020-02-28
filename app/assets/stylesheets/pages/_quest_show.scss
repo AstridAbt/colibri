@@ -10,12 +10,29 @@
     background: #ffffffc9;
     padding: 8px 16px;
     border-radius: 25px;
-  span{
-  font-size: 24px;
-  font-weight: bold;
+  span {
+    font-size: 24px;
+    font-weight: bold;
  }
 }
 
 .description_quest p {
   font-family: 'Slabo 27px', ;
+}
+
+.comeback {
+  text-decoration: none;
+  color: grey;
+  &:hover {
+  color: grey;
+  font-size: 16px;
+  }
+}
+
+.btn-success {
+  border-radius: 4px;
+  padding: 7px;
+  &:hover {
+  color: black;
+  }
 }

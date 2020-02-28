@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   end
   resources :participations, only: [:index, :destroy, :edit] do
     patch :finish_participation
+    resources :reviews, only: [:new, :create]
   end
 
 end

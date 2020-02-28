@@ -39,7 +39,7 @@ file_3_5 = URI.open('https://res.cloudinary.com/ddaiy1lcj/image/upload/v15827956
 file_3_6 = URI.open('https://res.cloudinary.com/ddaiy1lcj/image/upload/v1582795670/3_Je_fais_mon_propre_dentifrice_hommuo.jpg')
 
 quest_1_1 = Quest.create!(
-  points: 100,
+  points: 60,
   title: "J'éteins la lumière dès que possible",
   content: "
      Participer à un mouvement planétaire de sensibilisation aux enjeux écologiques",
@@ -63,7 +63,7 @@ quest_1_2 = Quest.create!(
 quest_1_2.photo.attach(io: file_1_2, filename: 'nes.png', content_type: 'image/png')
 
 quest_1_3 = Quest.create!(
-    points: 100,
+    points: 80,
     title: "Je fais pipi sous la douche",
     content: "
        Il n'y a pas de petits gestes dans la lutte pour préserver nos ressources",
@@ -75,7 +75,7 @@ quest_1_3 = Quest.create!(
 quest_1_3.photo.attach(io: file_1_3, filename: 'nes.png', content_type: 'image/png')
 
 quest_1_4 = Quest.create!(
-    points: 100,
+    points: 70,
     title: "Je privilégie les escaliers",
     content: "
          Il n'y a pas de petits gestes pour réduire son empreinte écologique",
@@ -87,7 +87,7 @@ quest_1_4 = Quest.create!(
 quest_1_4.photo.attach(io: file_1_4, filename: 'nes.png', content_type: 'image/png')
 
 quest_1_5 = Quest.create!(
-    points: 100,
+    points: 50,
     title: "J'utilise un moteur de recherche éco-responsable",
     content: "
          Je surfe sur Internet en réduisant mon impact écologique",
@@ -99,7 +99,7 @@ quest_1_5 = Quest.create!(
 quest_1_5.photo.attach(io: file_1_5, filename: 'nes.png', content_type: 'image/png')
 
 quest_1_6 = Quest.create!(
-    points: 100,
+    points: 90,
     title: "J'utilise une boule à thé",
     content: "
        Le thé en sachet individuel contient des microparticules de plastique",
@@ -121,7 +121,7 @@ quest_2_1 = Quest.create!(
 quest_2_1.photo.attach(io: file_2_1, filename: 'nes.png', content_type: 'image/png')
 
 quest_2_2 = Quest.create!(
-  points: 200,
+  points: 160,
   title: 'Je réduis ma garde robe',
   content: "
      L’industrie textile est l’une des plus polluantes au monde",
@@ -145,7 +145,7 @@ quest_2_3 = Quest.create!(
 quest_2_3.photo.attach(io: file_2_3, filename: 'nes.png', content_type: 'image/png')
 
 quest_2_4 = Quest.create!(
-  points: 200,
+  points: 150,
   title: 'Je fais des cadeaux réutilisés',
   content: "
      Questionner notre modèle de surconsommation",
@@ -157,7 +157,7 @@ quest_2_4 = Quest.create!(
 quest_2_4.photo.attach(io: file_2_4, filename: 'nes.png', content_type: 'image/png')
 
 quest_2_5 = Quest.create!(
-  points: 200,
+  points: 120,
   title: 'Je privilégie le vélo pour mes déplacements courts',
   content:"
      Je décide de rompre avec mes habitudes",
@@ -169,7 +169,7 @@ quest_2_5 = Quest.create!(
 quest_2_5.photo.attach(io: file_2_5, filename: 'nes.png', content_type: 'image/png')
 
 quest_2_6 = Quest.create!(
-  points: 200,
+  points: 130,
   title: 'J\'arrête de manger au fast-food',
   content:"
      Je diminue mon utilisation de nourriture suremballée",
@@ -181,7 +181,7 @@ quest_2_6 = Quest.create!(
 quest_2_6.photo.attach(io: file_2_6, filename: 'nes.png', content_type: 'image/png')
 
 quest_3_1 = Quest.create!(
-  points: 400,
+  points: 350,
   title: 'Je fais mes courses en vrac',
   content: "
      Le client peut être remis au coeur du circuit de l’alimentation zéro déchet",
@@ -193,7 +193,7 @@ quest_3_1 = Quest.create!(
 quest_3_1.photo.attach(io: file_3_1, filename: 'nes.png', content_type: 'image/png')
 
 quest_3_2 = Quest.create!(
-  points: 400,
+  points: 270,
   title: 'Je m\'habille dans les friperies',
   content: "
      L'industrie textile est l’une des plus polluantes au monde",
@@ -205,7 +205,7 @@ quest_3_2 = Quest.create!(
 quest_3_2.photo.attach(io: file_3_2, filename: 'nes.png', content_type: 'image/png')
 
 quest_3_3 = Quest.create!(
-  points: 400,
+  points: 320,
   title: 'J\'achète mes produits high-tech reconditionnés',
   content: "
      Les produits high-tech demandent beaucoup de matières premières",
@@ -217,7 +217,7 @@ quest_3_3 = Quest.create!(
 quest_3_3.photo.attach(io: file_3_3, filename: 'nes.png', content_type: 'image/png')
 
 quest_3_4 = Quest.create!(
-  points: 400,
+  points: 360,
   title: 'Je préfère le train à l\'avion pour les trajets continentaux',
   content: "
      Je me rends compte de l’impact écologique considérable des trajets en avion",
@@ -241,7 +241,7 @@ quest_3_5 = Quest.create!(
 quest_3_5.photo.attach(io: file_3_5, filename: 'nes.png', content_type: 'image/png')
 
 quest_3_6 = Quest.create!(
-  points: 400,
+  points: 290,
   title: 'Je fais mon propre dentifrice',
   content: "
      Les dentifrices classiques sont polluants et mauvais pour la santé",

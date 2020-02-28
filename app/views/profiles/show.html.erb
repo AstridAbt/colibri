@@ -2,9 +2,9 @@
   <div class="row justify-content-center align-items-center">
     <div class="profile-user-infos col-8">
       <h2>Salut <%= @profile.username %>,</h2>
-      <p>Ton score actuel est de <strong><%= @profile.score %></strong> points <i class="fas fa-star"></i></p>
-      <p> Tu as <strong><%= @profile.participations.count %></strong> quêtes en cours   <i class="fas fa-bolt"></i></h2>
-      <p>Ton empreinte carbone actuel est de : <strong><%= @profile.foot_print %></strong> C02e
+        <p>Mon score actuel: <strong><%= @profile.score %></strong> points <i class="fas fa-star"></i></p>
+        <p><strong><%= @profile.participations.currents.count%></strong> quêtes en cours <i class="fas fa-check"></i>
+        <p>Mon empreinte carbone est de : <strong><%= @profile.foot_print %></strong> kg/C02 e <i class="fas fa-bolt"></i></h2>
     </div>
   </div>
 </div>

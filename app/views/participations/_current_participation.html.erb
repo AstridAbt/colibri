@@ -10,12 +10,12 @@
       </div>
       <div class="card-product-actions pr-4">
         <div class="mx-4">
-          <%= link_to participation_finish_participation_path(participation), method: :patch do %>
+          <%= link_to participation_finish_participation_path(participation), method: :patch, remote: true do %>
             <button type="button" class="btn btn-success">J'ai réussi mon challenge !</button>
           <% end %>
         </div>
         <div class="mx-5 my-2">
-          <%= link_to "La quête ne me plait plus :(", participation_path(participation), method: :delete, class: "btn-delete", data: { confirm: "Êtes-vous certain de vouloir supprimer cette quête ?" } %>
+          <%= link_to "La quête ne me plait plus 👻", participation_path(participation), method: :delete, remote: true, class: "btn-delete", data: { confirm: "Êtes-vous certain de vouloir supprimer cette quête ?" } %>
         </div>
       </div>
     </div>
