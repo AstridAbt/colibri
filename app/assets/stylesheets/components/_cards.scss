@@ -1,4 +1,9 @@
 // css of the 3 cards LEVEL: 1, 2 and 3
+.accordion-position {
+  position: absolute;
+  top: 0;
+}
+
 .accordion > .card {
   align-items: center;
   padding: 10px;

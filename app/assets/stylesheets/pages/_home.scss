@@ -10,6 +10,17 @@
   height: 100vh;
 }
 
+.content-wrapper-quests-index{
+  height: calc(100vh - 70px - 80px);
+  position: relative;
+  background: white;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: scroll;
+}
+
 .colibri {
   padding-left: -20px;
 }
@@ -39,6 +50,7 @@
   }
   &::before {
     animation: sonar-effect 1s ease-in-out .1s infinite;
+    color: white;
   }
 }
 
