@@ -1,6 +1,6 @@
 <div class="position container-fluid">
-    <div class="row justify-content-center pt-3">
-      <div class="profile-user-infos col-8">
+    <div class="d-flex justify-content-center pt-4">
+      <div class="profile-user-infos col-8 mb-2">
         <h2>Salut <%= @profile.username %>,</h2>
           <p>Mon score actuel: <strong><%= @profile.score %></strong> points <i class="fas fa-star"></i></p>
           <p><strong><%= @profile.participations.currents.count%></strong> quêtes en cours <i class="fas fa-check"></i>

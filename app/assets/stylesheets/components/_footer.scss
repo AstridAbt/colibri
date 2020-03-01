@@ -1,15 +1,15 @@
 #profiles-show .personnal {
-  background-image: url(image-path('personnal1.svg'));
+  background-image: url(image-path('colibri.svg'));
   opacity: 1;
 }
 
 #quests-index .quests {
-  background-image: url(image-path('quests1.svg'));
+  background-image: url(image-path('quests2.svg'));
   opacity: 1;
 }
 
 #quests-show .quests {
-  background-image: url(image-path('quests1.svg'));
+  background-image: url(image-path('quests2.svg'));
   opacity: 1;
 }
 
@@ -27,19 +27,19 @@
   height: 50px;
   width: 50px;
   background-size: cover;
-  opacity: 0.6;
+  opacity: 0.4;
 }
 
 .personnal {
-  background-image: url(image-path('personnal-inactive1.svg'));
+  background-image: url(image-path('colibri-inactive.svg'));
 }
 
 .quests {
-  background-image: url(image-path('quests-inactive1.svg'));
+  background-image: url(image-path('quests-inactive2.svg'));
 }
 
 .world {
-  background-image: url(image-path('world-inactive1.svg'));
+  background-image: url(image-path('world-inactive2.svg'));
 }
 
 .settings {
@@ -48,13 +48,13 @@
 
 .footer {
   // background: #00897B;
-  background: #55ae77;
+  background: white;
   display: flex;
   align-items: center;
   justify-content: space-around;
   height: 80px;
-  color: rgba(0,0,0,0.3);
-  border-top: 4px solid black;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  // border-top: 4px solid black;
 }
 .footer-links {
   display: flex;

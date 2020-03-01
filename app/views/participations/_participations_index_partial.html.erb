@@ -1,17 +1,10 @@
-<div class="container bg-2">
-  <div class="title-reservation pt-2">
-    <h2> <strong>Toutes mes quêtes</strong> </h2>
-  </div>
-  <br>
-  <div class="container">
-    <h5> <strong>Mes quêtes en cours:</strong> </h5>
-    <div id="resa-actual" class="resa-container">
-      <%= render "../views/participations/current_participation.html.erb", participations: locals[:participations_current] %>
-    </div>
-    <br>
-    <h5> <strong>Mes quêtes passées:</strong> </h5>
-    <div id="resa-past" class="resa-container">
-      <%= render "../views/participations/past_participation", participations: locals[:participations_past] %>
-    </div>
-  </div>
+
+<h5> <strong>Mes quêtes en cours:</strong> </h5>
+<div id="resa-actual" class="resa-container">
+  <%= render "../views/participations/current_participation.html.erb", participations: locals[:participations_current] %>
+</div>
+
+<h5> <strong>Mes quêtes passées:</strong> </h5>
+<div id="resa-past" class="resa-container">
+  <%= render "../views/participations/past_participation", participations: locals[:participations_past] %>
 </div>

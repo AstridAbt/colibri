@@ -5,8 +5,8 @@
   // background: #00897B;
   background: #55ae77;
   height: 70px;
-  color: black;
-  border-bottom: 4px solid black;
+  // border-bottom: 4px solid black;
+  // box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
 .avatar {
@@ -18,14 +18,14 @@
 }
 
 .avatar-border {
-  border: 3px solid black;
+  // border: 3px solid black;
 }
 
 .title p {
   width: fit-content;
   margin: auto;
   font-size: 17px;
-  color: black;
+  color: white;
   font-weight: bold;
 }
 
