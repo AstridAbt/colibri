@@ -27,11 +27,16 @@ import { initStarRating } from '../plugins/init_star_rating';
 
 initStarRating();
 
-import {initCollapse} from '../components/initCollapse';
+import {initOpenLevel} from '../components/initOpenLevel';
+
+document.addEventListener('turbolinks:load', () => {
+  if (document.getElementById('container-levels')) {
+    initOpenLevel();
+  }
+
 import { earth } from '../components/earth';
 import { dataGraph } from '../components/graphicData'
 document.addEventListener('turbolinks:load', () => {
-  initCollapse();
   earth();
   dataGraph();
 })
