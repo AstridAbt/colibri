@@ -27,8 +27,10 @@ import { initStarRating } from '../plugins/init_star_rating';
 
 initStarRating();
 
-import {initCollapse} from '../components/initCollapse';
+import {initOpenLevel} from '../components/initOpenLevel';
 
 document.addEventListener('turbolinks:load', () => {
-  initCollapse();
+  if (document.getElementById('container-levels')) {
+    initOpenLevel();
+  }
 })

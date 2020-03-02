@@ -1,0 +1,10 @@
+<% level.each do |quest| %>
+  <%= link_to quest_path(quest) do %>
+    <div class="card-quest-infos">
+      <%= cl_image_tag quest.photo.key, alt: "alttext" %>
+      <h3><%= quest.title %></h3>
+      <p class="card-quest-points"><span><%= quest.points %></span> pts</p>
+      <p class="card-quest-starter">Go!</p>
+    </div>
+  <% end %>
+<% end %>
