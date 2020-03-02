@@ -1,0 +1,33 @@
+<div class="compare">
+  <div class="earth_needed text-center">
+    <p>
+      Si tout le monde vivait comme toi, il faudrait
+    </p>
+    <h1><strong><%= current_user.planets.round(1) %></strong> planètes
+    </h1>
+  </div>
+  <div class="earth">
+    <% current_user.planets.truncate.times do %>
+      <%= image_tag "terre.png", width: 140 %>
+    <% end %>
+
+    <% if current_user.planets > current_user.planets.truncate %>
+      <%= image_tag "half-terre.png", width: 70 %>
+    <% end %>
+  </div>
+  <div class="graphics d-flex justify-content-around w-100">
+    <div class="foot_print_ecological">
+      <div class="foot_print_percent" style="height:<%= ((((current_user.planets)/ 2.5)* 35) / 1.2).round(0) %>vh">
+      </div>
+    </div>
+    <div class="foot_print_carbon_1">
+      <div class="carbon_pertons" style="height: <%= ((((current_user.planets)/ 2.5)* 35) / 1.7).round(0)  %>vh">
+      </div>
+    </div>
+    <div class="foot_print_carbon_2">
+      <div class="carbon_percents" style="height: <%= ((((current_user.planets)/ 2.5)* 35) / 1.3).round(0) %>vh">
+      </div>
+    </div>
+  </div>
+</div>
+

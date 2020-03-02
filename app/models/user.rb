@@ -14,4 +14,8 @@ class User < ApplicationRecord
   validates_presence_of :username
   validates_uniqueness_of :username
 
+  def planets
+    (self.foot_print / 1000.to_f) * 2.5
+  end
+
 end

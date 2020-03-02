@@ -12,5 +12,5 @@ Rails.application.routes.draw do
     patch :finish_participation
     resources :reviews, only: [:new, :create]
   end
-
+  resources :comparisons, only: :index
 end

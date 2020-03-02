@@ -1,0 +1,35 @@
+.earth {
+  text-align: center;
+}
+
+.graphics {
+  height: 50vh;
+  padding-top: 50px;
+  & > div {
+    width: 48px;
+    height: 35vh;
+    background-color: #F7F7FB;
+  }
+}
+
+.foot_print_percent {
+  width: 48px;
+  background-color: #EA4463;
+}
+
+.foot_print_ecological {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.foot_print_carbon_1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.carbon_pertons {
+  width: 48px;
+  background-color: #EA4463;
+}
