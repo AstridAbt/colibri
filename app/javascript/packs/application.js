@@ -8,6 +8,11 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 
+import "bootstrap";
+import { initStarRating } from '../plugins/init_star_rating';
+import {initOpenLevel} from '../components/initOpenLevel';
+import { earth } from '../components/earth';
+import { dataGraph } from '../components/graphicData';
 
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)
@@ -21,25 +26,23 @@ require("channels")
 // Note(lewagon): ABOVE IS RAILS DEFAULT CONFIGURATION
 // WRITE YOUR OWN JS STARTING FROM HERE 👇
 // ----------------------------------------------------
-import "bootstrap";
 
-import { initStarRating } from '../plugins/init_star_rating';
 
-initStarRating();
-
-import {initOpenLevel} from '../components/initOpenLevel';
 
 document.addEventListener('turbolinks:load', () => {
   if (document.getElementById('container-levels')) {
     initOpenLevel();
   }
-
-import { earth } from '../components/earth';
-import { dataGraph } from '../components/graphicData'
-document.addEventListener('turbolinks:load', () => {
-  earth();
-  dataGraph();
-})
+  if (document.querySelector('.earth')) {
+    earth();
+  }
+  if (document.querySelector('.review_rating select')) {
+    initStarRating();
+  }
+  if (document.querySelector('#graph_javascript_first')) {
+    dataGraph();
+  }
+});
 
 
 
