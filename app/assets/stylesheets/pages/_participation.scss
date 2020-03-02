@@ -2,7 +2,6 @@
   display: inline-block;
   width: 100%;
   flex: 0 0 auto;
-  padding: 10px;
 }
 
 #resa-actual {
@@ -23,15 +22,16 @@
   overflow: hidden;
   height: 120px;
   background: white;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
   display: flex;
   align-items: center;
   position: relative;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
 .card-product img {
   height: 100%;
-  width: 213px;
+  width: 100%;
   object-fit: cover;
 }
 
@@ -78,10 +78,10 @@
   .card-product {
     flex-direction: column;
     height: 100%;
-    width: 95%;
+    width: 97%;
     margin: auto;
     img {
-      width: 100%;
+      // width: 100%;
     }
   }
 }
