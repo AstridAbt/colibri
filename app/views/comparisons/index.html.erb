@@ -1,0 +1,21 @@
+<div class="compare">
+  <div class="earth_needed text-center m-2">
+    <h4>
+      Si tout le monde vivait comme toi, il faudrait :
+    </h4>
+    <h1><strong><%= current_user.planets.round(1) %></strong> planètes
+    </h1>
+  </div>
+  <div class="earth pt-2 mb-3">
+    <% current_user.planets.truncate.times do %>
+      <%= image_tag "terre.png", class: "full-earth" %>
+    <% end %>
+    <% if current_user.planets > current_user.planets.truncate %>
+      <%= image_tag "half-terre.png", class: "half-earth" %>
+    <% end %>
+  </div>
+  <div id='graph_javascript_first' class="pt-4">
+  </div>
+  <div id='graph_javascript_second'>
+  </div>
+</div>

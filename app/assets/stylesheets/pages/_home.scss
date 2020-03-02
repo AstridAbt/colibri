@@ -22,10 +22,10 @@
 }
 
 .content-wrapper-quests-show{
-  height: calc(100vh - 70px - 80px);
+  height: calc(100vh - 80px);
   position: relative;
   background: white;
-  padding-top: 20px;
+  padding-top: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,13 +33,11 @@
 }
 
 .content-wrapper-profile-show{
-  height: calc(100vh - 70px - 80px);
+  height: calc(100vh - 80px);
   position: relative;
   background: white;
-  padding-top: 20px;
+  padding-top: 70px;
   display: flex;
-  justify-content: center;
-  align-items: center;
   overflow: scroll;
 }
 
@@ -53,7 +51,7 @@
   align-items: center;
   justify-content: center;
   color: white;
-  background: $corail;
+  background: linear-gradient(to right, #E61E4D 0%, #E31C5F 50%, #D70466 100%) !important;;
   border-radius: 25px;
   font-weight: bold;
   // display: inline-block;

@@ -8,10 +8,10 @@
         <h6> Quête : <%= participation.quest.title %></h6>
         <h6> Score: <%= participation.quest.points %> points</h6>
       </div>
-      <div class="card-product-actions pr-4">
-        <div class="mx-4">
+      <div class="card-product-actions">
+        <div class="d-flex justify-content-center">
           <%= link_to participation_finish_participation_path(participation), method: :patch, remote: true do %>
-            <button type="button" class="btn btn-success">J'ai réussi mon challenge !</button>
+            <button type="button" class="btn btn-color"><strong>J'ai réussi mon challenge !</strong></button>
           <% end %>
         </div>
         <div class="mx-5 my-2">

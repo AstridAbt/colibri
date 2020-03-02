@@ -33,4 +33,14 @@ document.addEventListener('turbolinks:load', () => {
   if (document.getElementById('container-levels')) {
     initOpenLevel();
   }
+
+import { earth } from '../components/earth';
+import { dataGraph } from '../components/graphicData'
+document.addEventListener('turbolinks:load', () => {
+  earth();
+  dataGraph();
 })
+
+
+
+
