@@ -12,5 +12,4 @@ class QuestPolicy < ApplicationPolicy
   def show?
     true
   end
-
 end

@@ -28,7 +28,14 @@ import { initStarRating } from '../plugins/init_star_rating';
 initStarRating();
 
 import {initCollapse} from '../components/initCollapse';
-
+import { earth } from '../components/earth';
+import { dataGraph } from '../components/graphicData'
 document.addEventListener('turbolinks:load', () => {
   initCollapse();
+  earth();
+  dataGraph();
 })
+
+
+
+

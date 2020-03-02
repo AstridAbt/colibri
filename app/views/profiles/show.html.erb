@@ -2,8 +2,8 @@
     <div class="d-flex justify-content-center pt-4">
       <div class="profile-user-infos mb-2">
         <h2><%= @profile.username %>,</h2>
-          <p>Score actuel: <strong><%= @profile.score %></strong> points <i class="fas fa-star"></i></p>
-          <p>Empreinte carbone: <strong><%= @profile.foot_print %></strong> kg/C02 e <i class="fas fa-bolt"></i></h2>
+          <p>Mon score: <strong><%= @profile.score %></strong> pts <i class="fas fa-star"></i></p>
+          <p>Mon empreinte carbone: <strong><%= ((@profile.foot_print) / 100).round(1) %></strong> T / C02 e <i class="fas fa-bolt"></i></h2>
       </div>
     </div>
     <%= render "./participations/participations_index_partial", locals: {participations_past: @my_past_participations, participations_current: @my_current_participations} %>
