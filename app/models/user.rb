@@ -17,5 +17,4 @@ class User < ApplicationRecord
   def planets
     (self.foot_print / 1000.to_f) * 2.5
   end
-
 end
