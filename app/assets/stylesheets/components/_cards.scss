@@ -39,13 +39,15 @@
   background-color: #F1B869;
   z-index: 3;
   left: -240px;
+  top: 50px;
   transform: rotate(-2deg);
 }
 
 .color-level-2 {
   background-color: #1A9EBB;
   z-index: 2;
-  left: -30px;
+  left: -70px;
+  top: 40px;
   margin-top: 20px;
   transform: rotate(4deg);
 }
@@ -53,7 +55,8 @@
 .color-level-3 {
   background-color: $violet;
   z-index: 1;
-  left: 15px;
+  left: -25px;
+  top: 60px;
   margin-top: 30px;
   transform: rotate(6deg);
 }
