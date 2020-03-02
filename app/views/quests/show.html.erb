@@ -1,64 +1,70 @@
 <div class="container-fluid container-position">
-  <div class="row">
+  <!-- <div class="back"> -->
+    <%#= link_to quests_path, class: 'comeback' do %>
+      <%#= image_tag('left-arrow-angle.svg', height: 15, width: 15) %>
+    <%# end %>
+  <!-- </div> -->
+  <!-- <div class="mx-auto" style="width: 200px;"> -->
+    <%#= simple_form_for([@quest, @participation]) do |f| %>
+      <%#= link_to '', quests_path(quest_level: @quest.points), class: 'comeback' %>
+      <!-- <i class="fas fa-angle-left"></i> -->
+    <%# end %>
+  <!-- </div> -->
+  <div class="row justify-content-center">
     <div class="titre_1 w-100">
       <div class="quest-image" style="background: url('<%= cl_image_path @quest.photo.key , alt: "alttext" %>')">
         <p class="score m-0"><span><%= @quest.points %></span> pts</p>
       </div>
       <div class="title_quest m-2">
-        <h1>
-          <%= @quest.title %>
-        </h1>
-        <br>
+        <h2>
+          <strong><%= @quest.title %></strong>
+        </h2>
       </div>
     </div>
-    <h4><em>Pourquoi réaliser cette quête ?</em> </h4>
-    <div class="description_quest m-2">
-      <p>
-        <i class="fas fa-tree"></i>
-        <%= @quest.content %>
-      </p>
-    </div>
-    <div class="description_quest m-2">
-      <p>
-        <i class="fab fa-pagelines"></i>
-        <%= @quest.content_2 %>
-      </p>
-    </div>
-    <% if @quest.content_3 %>
+    <div class="card-description-quest mb-2">
+      <h4><em><strong>Pourquoi réaliser cette quête ?</strong></em> </h4>
       <div class="description_quest m-2">
         <p>
-          <i class="fas fa-leaf"></i>
-          <%= @quest.content_3 %>
+          <i class="fas fa-tree"></i>
+          <strong><%= @quest.content %></strong>
         </p>
       </div>
+      <div class="description_quest m-2">
+        <p>
+          <i class="fab fa-pagelines"></i>
+          <strong><%= @quest.content_2 %></strong>
+        </p>
+      </div>
+      <% if @quest.content_3 %>
+        <div class="description_quest m-2">
+          <p>
+            <i class="fas fa-leaf"></i>
+            <strong><%= @quest.content_3 %></strong>
+          </p>
+        </div>
+    </div>
       <% end %>
   </div>
   <div class="mx-auto" style="width: 200px;">
     <%= simple_form_for([@quest, @participation]) do |f| %>
-      <%= f.submit "Accepter cette quête !", class: 'btn-success mb-2' %>
-    <% end %>
-  </div>
-  <div class="mx-auto" style="width: 200px;">
-    <%= simple_form_for([@quest, @participation]) do |f| %>
-      <i class="fas fa-angle-left"></i>
-      <%= link_to 'Revenir aux quêtes', quests_path(quest_level: @quest.points), class: 'comeback' %>
+      <%= f.submit "Accepter cette quête !", class: 'btn btn-color mb-4 font-weight-bold' %>
     <% end %>
   </div>
 
     <div class="list-group">
-      <h3>Regardez les reviews de cette quête :</h3>
+      <h4>Commentaires</h4>
       <% @quest.reviews.each do |review| %>
-      <div class="list-group-item">
-        <h5>Posté par : <%= review.user.username %></h5>
+      <div class="card-review">
+        <h5><%= review.user.username %></h5>
         <div>
-          <% if review.rating %>
-          <h5>Rating : <%= review.rating %></h5>
+          <%# if review.rating %>
+          <p><%= review.rating %></p>
             <%# review.rating.times do |i| %>
 <!--               <a href="#" data-rating-value=<%#=i%> data-rating-text=<%#= i %> class="br-selected br-current"></a> -->
             <%# end %>
-          <% end %>
+          <%# end %>
         </div>
-        <p>Review : <%= review.content %></p>
+        <p><%= review.content %></p>
       </div>
       <% end %>
     </div>
