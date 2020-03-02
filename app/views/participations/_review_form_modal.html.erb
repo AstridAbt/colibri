@@ -1,7 +1,7 @@
 <!-- Button trigger modal -->
 <div class="mx-4 mb-4">
   <button type="button" class="btn btn-color" data-toggle="modal" data-target="#reviewModal_<%= participation.id %>">
-    <strong>Laisses ton comm'</strong>
+    <strong>Laisse ton comm'</strong>
   </button>
 </div>
 
@@ -16,7 +16,7 @@
           <%= simple_form_for [ participation, Review.new ], html: { class: "review_rating" } do |f| %>
             <%= f.input :rating, collection: (1..5).to_a, label: false %>
             <%= f.input :content, label: "Commentaire" %>
-            <%= f.submit "Ajouter", class: "btn btn-success font-weight-bold" %>
+            <%= f.submit "Ajouter", class: "btn btn-color font-weight-bold" %>
           <% end %>
       </div>
     </div>

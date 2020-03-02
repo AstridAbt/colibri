@@ -1,9 +1,9 @@
 <div class="container-fluid container-position">
-  <!-- <div class="back"> -->
-    <%#= link_to quests_path, class: 'comeback' do %>
-      <%#= image_tag('left-arrow-angle.svg', height: 15, width: 15) %>
-    <%# end %>
-  <!-- </div> -->
+  <div class="back">
+    <%= link_to quests_path, class: 'comeback' do %>
+      <%= image_tag('arrow.svg', height: 20, width: 20) %>
+    <% end %>
+  </div>
   <!-- <div class="mx-auto" style="width: 200px;"> -->
     <%#= simple_form_for([@quest, @participation]) do |f| %>
       <%#= link_to '', quests_path(quest_level: @quest.points), class: 'comeback' %>
@@ -21,7 +21,7 @@
         </h2>
       </div>
     </div>
-    <div class="card-description-quest mb-2">
+    <div class="card-description-quest">
       <h4><em><strong>Pourquoi réaliser cette quête ?</strong></em> </h4>
       <div class="description_quest m-2">
         <p>
@@ -47,7 +47,7 @@
   </div>
   <div class="mx-auto" style="width: 200px;">
     <%= simple_form_for([@quest, @participation]) do |f| %>
-      <%= f.submit "Accepter cette quête !", class: 'btn btn-color mb-4 font-weight-bold' %>
+      <%= f.submit "Accepter cette quête !", class: 'btn btn-color my-3 font-weight-bold' %>
     <% end %>
   </div>
 
@@ -58,7 +58,12 @@
         <h5><%= review.user.username %></h5>
         <div>
           <%# if review.rating %>
-          <p><%= review.rating %></p>
+          <% rating = review.rating %>
+          <% stars = 0 %>
+          <% until stars == rating %>
+            <i class="fas fa-star star-rating"></i>
+            <% stars += 1 %>
+          <% end %>
             <%# review.rating.times do |i| %>
 <!--               <a href="#" data-rating-value=<%#=i%> data-rating-text=<%#= i %> class="br-selected br-current"></a> -->
             <%# end %>
