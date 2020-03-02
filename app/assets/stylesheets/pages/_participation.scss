@@ -8,7 +8,7 @@
   overflow-x: scroll;
   display: flex;
   flex-wrap: nowrap;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 #resa-past {
@@ -16,6 +16,17 @@
   display: flex;
   flex-wrap: nowrap;
   padding-bottom: 30px;
+}
+
+.number-quests span {
+  border-radius: 50%;
+  background: $corail;
+  color: white;
+  padding: 0px 8px 4px 8px;
+}
+
+.number-quests {
+  font-size: 23px;
 }
 
 .card-product {
@@ -50,7 +61,7 @@
 }
 
 .card-product .card-product-infos {
-  padding: 16px;
+  padding: 16px 0px 0px 0px;
 }
 
 .card-product-infos .column{
