@@ -13,7 +13,8 @@
 .content-wrapper-quests-index{
   height: calc(100vh - 60px);
   position: relative;
-  background: white;
+  // background: white;
+  background: linear-gradient(to bottom,#b6e2dd,#d3f6f4);
   padding-top: 70px;
   display: flex;
   justify-content: center;
