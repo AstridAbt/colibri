@@ -46,7 +46,7 @@ class ParticipationsController < ApplicationController
       @participation.finish_quest
       redirect_to profile_path(current_user)
     else
-      flash[:alert] = "Oups, something went wrong. Try again !"
+      flash[:alert] = "Oups, quelque chose ne va pas. Essayez encore !"
     end
   end
 end

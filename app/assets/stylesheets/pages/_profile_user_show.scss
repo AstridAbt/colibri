@@ -1,23 +1,28 @@
-.profile-user-infos {
-  background: #6b52b7;
+.profile-user-card{
+  background: white;
+  height: 90px;
+  width: 160px;
   border-radius: 10px;
-  padding: 5px 0px 0px 5px;
-  width: 97%;
+  padding: 10px 0px 20px 15px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
-.profile-user-infos h2 {
-  font-size: 25px;
-  font-weight: bold;
-  color: white;
+.profile-username{
+  font-size: 24px;
+  color: #445255;
 }
 
-.profile-user-infos p {
-  font-size: 19px;
-  color: white;
+.profile-user-title{
+  font-size: 16px;
+  color: $corail;
 }
 
-.position{
-  // position: absolute;
-  // top: 0;
+.profile-user-infos{
+  font-size: 20px;
+  color: #445255;
 }
+
+// .position{
+//   // position: absolute;
+//   // top: 0;
+// }
