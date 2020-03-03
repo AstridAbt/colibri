@@ -38,7 +38,7 @@
 }
 
 .color-level-1 {
-  background-color: #F1B869;
+  background-color: #ffbd69;
   z-index: 3;
   left: -240px;
   top: 30px;
@@ -46,7 +46,7 @@
 }
 
 .color-level-2 {
-  background-color: #1A9EBB;
+  background-color: #fe346e;
   z-index: 2;
   left: -45px;
   top: 40px;
@@ -55,7 +55,7 @@
 }
 
 .color-level-3 {
-  background-color: $violet;
+  background-color: #b21f66;
   z-index: 1;
   left: -15px;
   top: 60px;
@@ -65,7 +65,7 @@
 
 .levels-position.level1-open{
   .color-level-1{
-    left: -80px;
+    left: -75px;
     // transform: rotate(3deg);
   }
   .color-level-2{
@@ -108,6 +108,29 @@
   }
 }
 
+//clouds
+.cloud-1 {
+  position: absolute;
+  left: 50px;
+  height: 40px;
+  width: 60px;
+}
+
+// .cloud-2 {
+//   position: absolute;
+//   left: 250px;
+//   height: 50px;
+//   width: 80px;
+// }
+
+.cloud-3 {
+  position: absolute;
+  left: 270px;
+  height: 50px;
+  width: 110px;
+  top: 0px;
+}
+
 // css of the cards QUEST
 .card-quest-infos {
   position: relative;
@@ -138,7 +161,7 @@ a:hover {
   text-decoration: none;
   border-radius: 50%;
   color: #445255;
-  padding: 30px 35px 0px 20px;
+  padding: 20px 40px 0px 20px;
   text-transform: initial;
   font-size: 26px;
 }

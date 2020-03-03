@@ -104,7 +104,9 @@ quest_1_6 = Quest.create!(
     content: "
        Le thé en sachet individuel contient des microparticules de plastique",
     content_2: "
-       Acheter du thé en vrac permet de réduire ses déchets"
+       Acheter du thé en vrac permet de réduire ses déchets",
+    content_3: "
+        Idéalement, il faut acheter du thé commerce équitable"
 )
 quest_1_6.photo.attach(io: file_1_6, filename: 'nes.png', content_type: 'image/png')
 
