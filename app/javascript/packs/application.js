@@ -27,8 +27,6 @@ import { dataGraph } from '../components/graphicData';
 // WRITE YOUR OWN JS STARTING FROM HERE 👇
 // ----------------------------------------------------
 
-
-
 document.addEventListener('turbolinks:load', () => {
   if (document.getElementById('container-levels')) {
     initOpenLevel();
@@ -43,7 +41,3 @@ document.addEventListener('turbolinks:load', () => {
     dataGraph();
   }
 });
-
-
-
-
