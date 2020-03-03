@@ -40,7 +40,7 @@ file_3_6 = URI.open('https://res.cloudinary.com/ddaiy1lcj/image/upload/v15827956
 
 quest_1_1 = Quest.create!(
   points: 60,
-  title: "J'éteins la lumière dès que possible",
+  title: "J'éteins la lumière dès que je peux",
   content: "
      Participer à un mouvement planétaire de sensibilisation aux enjeux écologiques",
   content_2: "
@@ -88,7 +88,7 @@ quest_1_4.photo.attach(io: file_1_4, filename: 'nes.png', content_type: 'image/p
 
 quest_1_5 = Quest.create!(
     points: 50,
-    title: "J'utilise un moteur de recherche éco-responsable",
+    title: "Je suis éco-responsable sur Internet",
     content: "
          Je surfe sur Internet en réduisant mon impact écologique",
     content_2: "
@@ -110,7 +110,7 @@ quest_1_6.photo.attach(io: file_1_6, filename: 'nes.png', content_type: 'image/p
 
 quest_2_1 = Quest.create!(
   points: 200,
-  title: 'J\'achète mes fruits et légumes en circuit court',
+  title: 'J\'achète en circuit court',
   content: "
      Le client peut être remis au coeur du circuit de l’alimentation",
   content_2: "
@@ -158,7 +158,7 @@ quest_2_4.photo.attach(io: file_2_4, filename: 'nes.png', content_type: 'image/p
 
 quest_2_5 = Quest.create!(
   points: 120,
-  title: 'Je privilégie le vélo pour mes déplacements courts',
+  title: 'Je privilégie le vélo pour mes trajets courts',
   content:"
      Je décide de rompre avec mes habitudes",
   content_2: "
@@ -206,7 +206,7 @@ quest_3_2.photo.attach(io: file_3_2, filename: 'nes.png', content_type: 'image/p
 
 quest_3_3 = Quest.create!(
   points: 320,
-  title: 'J\'achète mes produits high-tech reconditionnés',
+  title: 'J\'achète du reconditionnés',
   content: "
      Les produits high-tech demandent beaucoup de matières premières",
   content_2: "
@@ -218,7 +218,7 @@ quest_3_3.photo.attach(io: file_3_3, filename: 'nes.png', content_type: 'image/p
 
 quest_3_4 = Quest.create!(
   points: 360,
-  title: 'Je préfère le train à l\'avion pour les trajets continentaux',
+  title: 'Je préfère le train à l\'avion',
   content: "
      Je me rends compte de l’impact écologique considérable des trajets en avion",
   content_2: "
@@ -230,7 +230,7 @@ quest_3_4.photo.attach(io: file_3_4, filename: 'nes.png', content_type: 'image/p
 
 quest_3_5 = Quest.create!(
   points: 400,
-  title: 'Je participe à nettoyer les espaces publics',
+  title: 'Je nettoie les espaces publics',
   content: "
      Tout le plastique produit dans le monde existe encore",
   content_2: "
