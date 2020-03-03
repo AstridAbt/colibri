@@ -18,11 +18,24 @@
   padding-bottom: 30px;
 }
 
-.number-quests span {
+.number-quests-current span {
   border-radius: 50%;
   background: $corail;
   color: white;
-  padding: 0px 8px 4px 8px;
+  padding: 0px 9px 4px 9px;
+  position: absolute;
+  right: 56px;
+  bottom: 458px;
+}
+
+.number-quests-past span {
+  border-radius: 50%;
+  background: $corail;
+  color: white;
+  padding: 0px 9px 4px 9px;
+  position: absolute;
+  right: 58px;
+  bottom: 6px;
 }
 
 .number-quests {
