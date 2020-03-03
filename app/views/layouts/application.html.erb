@@ -8,8 +8,10 @@
     <meta property="og:title" content="Colibri - Faire sa part">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.colibri.herokuapp.com/">
-
+    <%= favicon_link_tag "colibri_favicon.png" %>
     <meta name="viewport" content="width=320, initial-scale=1">
+    <link rel="manifest" href="<%= asset_path 'manifest.json' %>">
+    <%= render 'shared/ios_pwa_links' %>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Slabo+27px&display=swap" rel="stylesheet">    <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
