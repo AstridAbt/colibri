@@ -10,17 +10,19 @@
   display: flex;
   flex-direction: unset;
   align-items: baseline;
-  padding: 10px;
-  height: 490px;
+  padding-left: 10px;
+  height: 510px;
   width: 380px;
   overflow: hidden;
   transition: left 0.6s ease-out;
+  border-radius: 10px;
 }
 
 .card-width {
   width: 90%;
   overflow-y: scroll;
   height: 100%;
+  padding-left: 80px;
 }
 
 .title-quest-level {
@@ -38,7 +40,7 @@
 }
 
 .color-level-1 {
-  background-color: #ffbd69;
+  background-color: #a8e6cf;
   z-index: 3;
   left: -240px;
   top: 30px;
@@ -46,7 +48,7 @@
 }
 
 .color-level-2 {
-  background-color: #fe346e;
+  background-color: #ffd3b6;
   z-index: 2;
   left: -45px;
   top: 40px;
@@ -55,7 +57,7 @@
 }
 
 .color-level-3 {
-  background-color: #b21f66;
+  background-color: #ffaaa5;
   z-index: 1;
   left: -15px;
   top: 60px;
@@ -123,6 +125,14 @@
 //   width: 80px;
 // }
 
+.farm{
+  position: absolute;
+  height: 200px;
+  width: 380px;
+  top: 560px;
+  left: 0px;
+}
+
 .cloud-3 {
   position: absolute;
   left: 270px;
@@ -139,9 +149,17 @@
   width: 240px;
   font-size: 30px;
   border-radius: 25px;
-  margin-bottom: 40px;
-  margin-left: 50px;
+  margin: 30px 0px;
   box-shadow: inset -1px 20px 20px 3px rgba(0, 0, 0, 0.2)
+}
+
+.card-quest-infos h3 {
+  text-decoration: none;
+  border-radius: 50%;
+  color: #445255;
+  padding: 20px 40px 0px 20px;
+  text-transform: initial;
+  font-size: 26px;
 }
 
 .card-quest-infos img {
@@ -155,15 +173,6 @@
 
 a:hover {
   text-decoration: none;
-}
-
-.card-quest-infos h3 {
-  text-decoration: none;
-  border-radius: 50%;
-  color: #445255;
-  padding: 20px 40px 0px 20px;
-  text-transform: initial;
-  font-size: 26px;
 }
 
 .card-quest-points {
