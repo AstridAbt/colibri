@@ -104,7 +104,7 @@ quest_1_6 = Quest.create!(
     content: "
        Le thé en sachet individuel contient des microparticules de plastique",
     content_2: "
-       Acheter du thé en vrac permet de réduire ses déchets"
+       Acheter du thé en vrac permet de réduire ses déchets",
     content_3: "
         Idéalement, il faut acheter du thé commerce équitable"
 )
