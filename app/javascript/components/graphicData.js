@@ -21,7 +21,6 @@ const dataGraph = () => {
       color: 'rgb(240, 240, 240)'
   }]
 
-
 const categories = []
 countries.forEach(function (country) {
   categories.push('<span><img src="https://image.flaticon.com/icons/svg/323/' + country.flag + '.svg" style="width: 30px; height: 30px;"/><br></span>');
@@ -61,7 +60,8 @@ countries.forEach(function (country) {
       series: [{
           data: [129.9, 184.0, 216.0, 109.2, 87.9],
           name: 'Cylinders',
-          showInLegend: false
+          showInLegend: false,
+          enabled: false
       }],
       colors: ["blue", "yellow", "red", "green"],
       xAxis: [{
@@ -74,12 +74,19 @@ countries.forEach(function (country) {
       }],
       yAxis: [{
           title: {
-          text: "t/CO2 e",
+          text: "T / CO2 E",
           margin: 40,
+          style: {
+            color: "black",
+            fontSize: 18,
+          },
           },
           gridLineColor: "#eeeeee"
 
       }],
+      tooltip: {
+        enabled: false
+      },
       colorAxis: [{
           lineColor: "#ff002e"
       }],
