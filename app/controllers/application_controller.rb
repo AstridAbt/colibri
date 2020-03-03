@@ -22,11 +22,4 @@ class ApplicationController < ActionController::Base
   def skip_pundit?
     devise_controller? || params[:controller] =~ /(^(rails_)?admin)|(^pages$)/
   end
-
-  # def ensure_user_carbone_print
-  #   return unless current_user
-
-  #   CarbonePrint.create(user: current_user, quest: ) unless
-  #     current_user.carbone_print
-  # end
 end
