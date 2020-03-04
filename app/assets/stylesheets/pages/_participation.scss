@@ -12,6 +12,18 @@
   padding-bottom: 30px;
 }
 
+.number-quests-current {
+  font-weight: bold;
+  font-size: 25px;
+  color: black;
+}
+
+.number-quests-past {
+  font-weight: bold;
+  font-size: 25px;
+  color: black;
+}
+
 .number-quests-current span {
   border-radius: 50%;
   background: $corail;
