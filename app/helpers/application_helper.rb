@@ -15,4 +15,8 @@ module ApplicationHelper
     params[:controller] == 'profiles' && params[:action] == 'show'
   end
 
+  def pages_earth?
+    params[:controller] == 'comparisons' && params[:action] == 'index'
+  end
+
 end

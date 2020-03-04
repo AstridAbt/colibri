@@ -9,11 +9,27 @@
   background: white;
   height: 100vh;
 }
-
+.content-wrapper-earth{
+  height: calc(100vh - 60px);
+  position: relative;
+  background: radial-gradient(circle at 50% 47%,#357a7d,#1c405f);
+  padding-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: scroll;
+}
+.content-wrapper-profile-show{
+  height: calc(100vh - 60px);
+  position: relative;
+  background: white;
+  padding-top: 70px;
+  display: flex;
+  overflow: scroll;
+}
 .content-wrapper-quests-index{
   height: calc(100vh - 60px);
   position: relative;
-  // background: white;
   background: linear-gradient(to bottom,#b6e2dd,#d3f6f4);
   padding-top: 70px;
   display: flex;
@@ -21,7 +37,6 @@
   align-items: center;
   overflow: scroll;
 }
-
 .content-wrapper-quests-show{
   height: calc(100vh - 60px);
   position: relative;
@@ -30,15 +45,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: scroll;
-}
-
-.content-wrapper-profile-show{
-  height: calc(100vh - 60px);
-  position: relative;
-  background: white;
-  padding-top: 70px;
-  display: flex;
   overflow: scroll;
 }
 

@@ -1,8 +1,10 @@
 <div class="compare mt-5">
-  <div class="earth_needed text-center m-2">
-    <h4>
-      Si tout le monde vivait comme toi, il faudrait :
-    </h4>
+  <img class="earth-stars" src=<%= image_path("stars.png") %> alt="">
+  <img class="earth-stars" src=<%= image_path("stars.png") %> alt="">
+  <img class="earth-stars" src=<%= image_path("stars.png") %> alt="">
+  <div class="earth_needed text-center text-white m-2">
+    <h4>Si tout le monde vivait</h4>
+    <h4>comme toi, il faudrait :</h4>
     <h1><strong><%= current_user.planets.round(1) %></strong> planètes
     </h1>
   </div>
@@ -14,7 +16,10 @@
       <%= image_tag "half-terre.png", class: "half-earth" %>
     <% end %>
   </div>
-  <div class="graph_d" id="graph_d"></div>
+  <br>
+  <h4 class="text-center text-white"><i class="fas fa-shoe-prints"></i></i> carbone dans le monde</h4>
+  <br>
+  <div class="graph_d" style="width:330px" id="graph_d"></div>
   <div id='graph_javascript_first' class="pt-4">
   </div>
   <div id='graph_javascript_second'>
