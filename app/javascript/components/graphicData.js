@@ -78,14 +78,14 @@ countries.forEach(function (country) {
           text: "T / CO2 E",
           margin: 15,
           style: {
-            color: "white",
+            color: "$gray",
             fontSize: 18,
           },
           },
-          gridLineColor: "white",
+          gridLineColor: "grey",
           labels: {
             style: {
-              color: "white",
+              color: "$gray",
               fontSize: 14
             }
           },
