@@ -3,7 +3,7 @@
     <div class="card-product mt-2">
       <div class="card-quest-image w-100">
       <%= link_to quest_path(participation.quest) do %>
-        <%= cl_image_tag(participation.quest.photo.key, crop: :fill) %>
+        <%= cl_image_tag(participation.quest.photo.key) %>
       </div>
       <% end %>
       <div class="card-product-infos d-flex flex-column flex-grow-1">
