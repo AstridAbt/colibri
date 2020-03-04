@@ -29,6 +29,7 @@ countries.forEach(function (country) {
   Highcharts.chart('graph_d', {
       chart: {
           type: 'cylinder',
+          backgroundColor: "transparent",
           options3d: {
               enabled: true,
               alpha: 15,
@@ -41,7 +42,7 @@ countries.forEach(function (country) {
           enabled: false
       },
       title: {
-          text: 'Mon empreinte carbone vs le reste du Monde',
+          text: '',
           style: {"fontSize": "23px", "color": "black", "fontWeight": "bolder",
           "fontFamily": "Raleway"
         }
@@ -53,7 +54,7 @@ countries.forEach(function (country) {
       },
       plotOptions: {
           series: {
-              depth: 25,
+              depth: 50,
               colorByPoint: true
           }
       },
@@ -63,7 +64,7 @@ countries.forEach(function (country) {
           showInLegend: false,
           enabled: false
       }],
-      colors: ["blue", "yellow", "red", "green"],
+      colors: ["#4d80e4", "#a6b1e1", "#ffaaa5", "#feb377", "#ffe75e"],
       xAxis: [{
           gridLineWidth: 0,
           labels: {
@@ -75,20 +76,25 @@ countries.forEach(function (country) {
       yAxis: [{
           title: {
           text: "T / CO2 E",
-          margin: 40,
+          margin: 15,
           style: {
-            color: "black",
+            color: "white",
             fontSize: 18,
           },
           },
-          gridLineColor: "#eeeeee"
-
+          gridLineColor: "white",
+          labels: {
+            style: {
+              color: "white",
+              fontSize: 14
+            }
+          },
       }],
       tooltip: {
         enabled: false
       },
       colorAxis: [{
-          lineColor: "#ff002e"
+          lineColor: "#white"
       }],
       credits: {
           enabled: false
