@@ -3,6 +3,26 @@
   max-height: 200px;
 }
 
+.earth-stars{
+  position: absolute;
+  width: 100%;
+  top: 36%;
+
+  &:first-of-type {
+    top: 0;
+  }
+  &:last-of-type {
+    bottom: 0;
+    top: inherit;
+  }
+}
+
+#graph_d {
+  svg {
+    width: 100%;
+  }
+}
+
 .compare {
   margin-top: 5rem !important;
 }
@@ -57,3 +77,5 @@
 .half-earth {
   max-height: 80px;
 }
+
+
