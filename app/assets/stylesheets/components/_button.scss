@@ -45,3 +45,10 @@ a.btn-delete {
     color: white;
   }
 }
+
+@keyframes sonar-effect {
+  100% {
+    box-shadow: 0 0 0 5px $corail, 0 0 10px 10px $corail, 0 0 0 10px $corail;
+    opacity: 0;
+  }
+}
