@@ -38,12 +38,11 @@ a.btn-delete {
     border-radius: 25px;
     top: 0;
     left: 0;
-    // background-color: $corail;
-  }
-  &::before {
     animation: sonar-effect 1s ease-in-out .1s infinite;
     color: white;
   }
+  //&::before {
+  // }
 }
 
 @keyframes sonar-effect {
