@@ -43,27 +43,26 @@
       <%= f.submit "Accepter cette quête !", class: 'btn btn-color mb-4 font-weight-bold' %>
     <% end %>
   </div>
-
-    <div class="list-group">
-      <h4>Commentaires</h4>
-      <% @quest.reviews.each do |review| %>
-      <div class="card-review">
-        <h5><%= review.user.username %></h5>
-        <div>
-          <%# if review.rating %>
-          <% rating = review.rating %>
-          <% stars = 0 %>
-          <% until stars == rating %>
-            <i class="fas fa-star star-rating"></i>
-            <% stars += 1 %>
-          <% end %>
-            <%# review.rating.times do |i| %>
+  <div class="list-group">
+    <h4>Commentaires</h4>
+    <% @quest.reviews.each do |review| %>
+    <div class="card-review">
+      <h5><%= review.user.username %></h5>
+      <div>
+        <%# if review.rating %>
+        <% rating = review.rating %>
+        <% stars = 0 %>
+        <% until stars == rating %>
+          <i class="fas fa-star star-rating"></i>
+          <% stars += 1 %>
+        <% end %>
+          <%# review.rating.times do |i| %>
 <!--               <a href="#" data-rating-value=<%#=i%> data-rating-text=<%#= i %> class="br-selected br-current"></a> -->
-            <%# end %>
           <%# end %>
-        </div>
-        <p><%= review.content %></p>
+        <%# end %>
       </div>
-      <% end %>
+      <p><%= review.content %></p>
     </div>
+    <% end %>
+  </div>
 </div>

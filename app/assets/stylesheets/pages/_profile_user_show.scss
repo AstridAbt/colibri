@@ -8,16 +8,47 @@
 }
 
 .profile-username{
-  font-size: 24px;
+  font-size: 28px;
   color: #445255;
 }
 
 .profile-user-title{
-  font-size: 16px;
+  font-size: 23px;
   color: $corail;
 }
 
 .profile-user-infos{
-  font-size: 20px;
+  font-size: 23px;
   color: #445255;
+  margin-bottom: 0px;
+}
+
+.cloud1 {
+  position: absolute;
+  left: -32%;
+  top: 32%;
+  min-width: 120px;
+  max-width: 266px;
+  max-height: 125px;
+  min-height: 55px;
+}
+
+ .cloud2 {
+  position: absolute;
+  right: -8%;
+  top: 10%;
+  min-width: 70px;
+  max-width: 128px;
+  min-height: 34px;
+  max-height: 60px;
+}
+
+.cloud3 {
+  position: absolute;
+  top: 84%;
+  right: -52%;
+  min-width: 159px;
+  max-width: 346px;
+  min-height: 52px;
+  max-height: 147px;
 }
