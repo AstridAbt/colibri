@@ -1,23 +1,24 @@
 <!-- Button trigger modal -->
 <div class="mx-4 mb-4">
   <button type="button" class="btn btn-color" data-toggle="modal" data-target="#reviewModal_<%= participation.id %>">
-    <strong>Laisser un avis 🌚</strong>
-  </button>
+    <%= link_to 'Voir mon impact 🌚', comparisons_path(current_user) %>
+<!--     <strong>Voir mon impact 🌚</strong>
+ -->  </button>
 </div>
 <!-- Modal -->
-<div class="modal fade" id="reviewModal_<%= participation.id %>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<!-- <div class="modal fade" id="reviewModal_<%= participation.id %>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-body">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-          <%= simple_form_for [ participation, Review.new ], html: { class: "review_rating" } do |f| %>
-            <%= f.input :rating, collection: (1..5).to_a, label: false %>
-            <%= f.input :content, label: "Commentaire" %>
-            <%= f.submit "Ajouter", class: "btn btn-color font-weight-bold" %>
-          <% end %>
+          <#%= simple_form_for [ participation, Review.new ], html: { class: "review_rating" } do |f| %>
+            <#%= f.input :rating, collection: (1..5).to_a, label: false %>
+            <#%= f.input :content, label: "Commentaire" %>
+            <#%= f.submit "Ajouter", class: "btn btn-color font-weight-bold" %>
+          <#% end %>
       </div>
     </div>
   </div>
-</div>
+</div> -->

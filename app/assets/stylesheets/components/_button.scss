@@ -7,6 +7,11 @@
   background-position: calc((100 - var(--mouse-x, 0)) * 1%) calc((100 - var(--mouse-y, 0)) * 1%);
 }
 
+.btn-color a {
+  color: black;
+  font-weight: bold;
+}
+
 a.btn-delete {
   font-size: 16px;
   color: black;
