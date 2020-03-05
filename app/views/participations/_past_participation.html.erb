@@ -1,6 +1,6 @@
 <% participations.each do |participation| %>
   <div class="card-product-wrapper">
-    <div class="card-product mt-2">
+    <div class="card-product opacity-past mt-2">
       <div class="card-quest-image w-100">
       <%= link_to quest_path(participation.quest) do %>
         <%= cl_image_tag(participation.quest.photo.key) %>
