@@ -19,37 +19,78 @@ a.btn-delete {
   padding: 7px;
 }
 
-.btn-home{
+// .btn-home{
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   color: white;
+//   background: linear-gradient(to right, #E61E4D 0%, #E31C5F 50%, #D70466 100%) !important;;
+//   border-radius: 25px;
+//   // font-weight: bold;
+//   font-size: 24px;
+//   position: relative;
+//   width: 150px;
+//   height: 50px;
+//   &::before {
+//     content: '';
+//     display: inline-block;
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     border-radius: 25px;
+//     top: 0;
+//     left: 0;
+//     animation: sonar-effect 1s ease-in-out .1s infinite;
+//     color: white;
+//   }
+//   //&::before {
+//   // }
+// }
+
+// @keyframes sonar-effect {
+//   0% {
+//     // -webkit-box-shadow: 0 0 0 5px rgba(0, 0, 0, 0), 0 0 10px 10px rgba(0, 0, 0, 0), 0 0 0 10px rgba(0, 0, 0, 0);
+//     // -moz-box-shadow: 0 0 0 5px rgba(0, 0, 0, 0), 0 0 10px 10px rgba(0, 0, 0, 0), 0 0 0 10px rgba(0, 0, 0, 0);
+//     // opacity: 0;
+//   }
+
+//   100% {
+//     -webkit-box-shadow: 0 0 0 5px $corail, 0 0 10px 10px $corail, 0 0 0 10px $corail;
+//     -moz-box-shadow: 0 0 0 5px $corail, 0 0 10px 10px $corail, 0 0 0 10px $corail;
+//     opacity: 0;
+//   }
+// }
+
+
+
+///////////////////
+
+
+
+@keyframes shadow-pulse
+{
+  0% {
+    box-shadow: 0 0 0 0px rgba(255, 93, 108, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 35px rgba(255, 93, 108, 0);
+  }
+}
+
+.example-1
+{
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-  background: linear-gradient(to right, #E61E4D 0%, #E31C5F 50%, #D70466 100%) !important;;
-  border-radius: 25px;
-  // font-weight: bold;
-  font-size: 24px;
-  position: relative;
+  margin: 40px;
   width: 150px;
   height: 50px;
-  &::before {
-    content: '';
-    display: inline-block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 25px;
-    top: 0;
-    left: 0;
-    animation: sonar-effect 1s ease-in-out .1s infinite;
-    color: white;
-  }
-  //&::before {
-  // }
-}
-
-@keyframes sonar-effect {
-  100% {
-    box-shadow: 0 0 0 5px $corail, 0 0 10px 10px $corail, 0 0 0 10px $corail;
-    opacity: 0;
-  }
+  font: 13px/130px 'Barlow Semi Condensed', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+  text-align: center;
+  background: rgb(255, 93, 108);
+  border-radius: 25px;
+  animation: shadow-pulse 1s ease-in-out infinite;
 }
