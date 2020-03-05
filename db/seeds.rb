@@ -19,7 +19,7 @@ puts 'Finished users creation !'
 
 puts 'Creating quests...'
 
-file_1_1 = URI.open('https://res.cloudinary.com/ddaiy1lcj/image/upload/v1582800585/2-j_%C3%A9teins_la_lumi%C3%A8re_dke3ku.jpg')
+# file_1_1 = URI.open('https://res.cloudinary.com/ddaiy1lcj/image/upload/v1582800585/2-j_%C3%A9teins_la_lumi%C3%A8re_dke3ku.jpg')
 file_1_2 = URI.open('https://res.cloudinary.com/ddaiy1lcj/image/upload/v1582795670/1_J_utilise_un_shampoing_solide_bio_qnxlpb.jpg')
 file_1_3 = URI.open('https://res.cloudinary.com/ddaiy1lcj/image/upload/v1582795670/1_Je_fais_pipi_sous_la_douche_rvyvuh.jpg')
 file_1_4 = URI.open('https://res.cloudinary.com/ddaiy1lcj/image/upload/v1582795670/1_Je_priviligie_les_escaliers_qbwq8v.jpg')
@@ -38,17 +38,17 @@ file_3_4 = URI.open('https://res.cloudinary.com/ddaiy1lcj/image/upload/v15827956
 file_3_5 = URI.open('https://res.cloudinary.com/ddaiy1lcj/image/upload/v1582795671/3_Je_participe_%C3%A0_nettoyer_les_espaces_sauvages_fodbes.jpg')
 file_3_6 = URI.open('https://res.cloudinary.com/ddaiy1lcj/image/upload/v1582795670/3_Je_fais_mon_propre_dentifrice_hommuo.jpg')
 
-quest_1_1 = Quest.create!(
-  points: 60,
-  title: "J'éteins la lumière dès que je peux",
-  content: "
-     Participer à un mouvement planétaire de sensibilisation aux enjeux écologiques",
-  content_2: "
-     Sentir qu'on est pas seul à se préoccuper de l'urgence climatique",
-  content_3: "
-     Il est nécessaire d'aller beaucoup plus loin que les événements classiques de sensibilisation"
-)
-quest_1_1.photo.attach(io: file_1_1, filename: 'nes.png', content_type: 'image/png')
+# quest_1_1 = Quest.create!(
+#   points: 60,
+#   title: "J'éteins la lumière dès que je peux",
+#   content: "
+#      Participer à un mouvement planétaire de sensibilisation aux enjeux écologiques",
+#   content_2: "
+#      Sentir qu'on est pas seul à se préoccuper de l'urgence climatique",
+#   content_3: "
+#      Il est nécessaire d'aller beaucoup plus loin que les événements classiques de sensibilisation"
+# )
+# quest_1_1.photo.attach(io: file_1_1, filename: 'nes.png', content_type: 'image/png')
 
 quest_1_2 = Quest.create!(
   points: 100,
