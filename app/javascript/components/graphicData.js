@@ -4,8 +4,8 @@ const dataGraph = () => {
       flag: 323315,
       color: 'rgb(201, 36, 39)'
   }, {
-      name: 'Union-Européenne',
-      flag: 323344,
+      name: 'France',
+      flag: 323315,
       color: 'rgb(201, 36, 39)'
   }, {
       name: 'Etats-Unis',
@@ -21,9 +21,16 @@ const dataGraph = () => {
       color: 'rgb(240, 240, 240)'
   }]
 
+const graph = document.getElementById('graph_d');
+const footprints = JSON.parse(graph.dataset.footprints);
 const categories = []
+
 countries.forEach(function (country) {
-  categories.push('<span><img src="https://image.flaticon.com/icons/svg/323/' + country.flag + '.svg" style="width: 30px; height: 30px;"/><br></span>');
+  if (country.name === 'Moi') {
+    categories.push('<span><img src="' + graph.dataset.profilePicture + '" style="width: 30px; height: 30px" class="img-profile"/></span>');
+  } else {
+    categories.push('<span><img src="https://image.flaticon.com/icons/svg/323/' + country.flag + '.svg" style="width: 30px; height: 30px;"/><br></span>');
+  }
 });
 
   Highcharts.chart('graph_d', {
@@ -59,7 +66,7 @@ countries.forEach(function (country) {
           }
       },
       series: [{
-          data: [129.9, 184.0, 216.0, 109.2, 87.9],
+          data: footprints,
           name: 'Cylinders',
           showInLegend: false,
           enabled: false
