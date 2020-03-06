@@ -1,6 +1,8 @@
-<div class="d-flex justify-content-center">
-  <h5 class="number-quests-current mt-3"> <strong>Mes quêtes en cours </strong><span><%= @profile.participations.currents.count %></span></h5>
-</div>
+<% if @profile.participations.currents.any? %>
+  <div class="d-flex justify-content-center">
+    <h5 class="number-quests-current mt-3"> <strong>Mes quêtes en cours </strong><span><%= @profile.participations.currents.count %></span></h5>
+  </div>
+<% end %>
 <div id="resa-actual" class="resa-container">
   <%= render "../views/participations/current_participation.html.erb", participations: locals[:participations_current] %>
 </div>
