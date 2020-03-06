@@ -21,17 +21,17 @@ const dataGraph = () => {
       color: 'rgb(240, 240, 240)'
   }]
 
+const graph = document.getElementById('graph_d');
+const footprints = JSON.parse(graph.dataset.footprints);
 const categories = []
+
 countries.forEach(function (country) {
   if (country.name === 'Moi') {
-    categories.push('<span><img src="https://image.flaticon.com/icons/svg/2633/2633903.svg" style="width: 30px; height: 30px;"/><br></span>');
+    categories.push('<span><img src="' + graph.dataset.profilePicture + '" style="width: 30px; height: 30px" class="img-profile"/></span>');
   } else {
     categories.push('<span><img src="https://image.flaticon.com/icons/svg/323/' + country.flag + '.svg" style="width: 30px; height: 30px;"/><br></span>');
   }
 });
-
-const graph = document.getElementById('graph_d');
-const footprints = JSON.parse(graph.dataset.footprints);
 
   Highcharts.chart('graph_d', {
       chart: {
